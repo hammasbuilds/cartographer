@@ -1,0 +1,492 @@
+{
+  "commits": 767,
+  "skipped_large_commits": 0,
+  "followed_renames": true,
+  "files_at_head": 74,
+  "import_edges": 155,
+  "unparseable_files": 0,
+  "coupled_pairs": 203,
+  "pairs_with_a_deleted_file": 63,
+  "explained_by_imports": 115,
+  "explained_share": 0.5665,
+  "min_support": 3,
+  "min_lift": 2.0,
+  "unconnected": [
+    {
+      "a": "docs/conf.py",
+      "b": "src/packaging/__init__.py",
+      "commits_together": 8,
+      "confidence": 0.421,
+      "lift": 7.18,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "docs/conf.py",
+      "b": "noxfile.py",
+      "commits_together": 6,
+      "confidence": 0.316,
+      "lift": 3.32,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "docs/conf.py",
+      "b": "src/packaging/markers.py",
+      "commits_together": 5,
+      "confidence": 0.263,
+      "lift": 2.59,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "docs/conf.py",
+      "b": "src/packaging/version.py",
+      "commits_together": 5,
+      "confidence": 0.263,
+      "lift": 2.08,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "src/packaging/_elffile.py",
+      "b": "src/packaging/_tokenizer.py",
+      "commits_together": 4,
+      "confidence": 0.5,
+      "lift": 12.78,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "docs/conf.py",
+      "b": "src/packaging/_structures.py",
+      "commits_together": 4,
+      "confidence": 0.286,
+      "lift": 11.53,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "src/packaging/_elffile.py",
+      "b": "src/packaging/_parser.py",
+      "commits_together": 4,
+      "confidence": 0.5,
+      "lift": 10.09,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "src/packaging/__init__.py",
+      "b": "src/packaging/_structures.py",
+      "commits_together": 4,
+      "confidence": 0.286,
+      "lift": 4.87,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "tests/test_markers.py",
+      "b": "tests/test_musllinux.py",
+      "commits_together": 3,
+      "confidence": 0.3,
+      "lift": 5.11,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "tests/test_musllinux.py",
+      "b": "tests/test_specifiers.py",
+      "commits_together": 3,
+      "confidence": 0.3,
+      "lift": 3.11,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "docs/conf.py",
+      "b": "src/packaging/utils.py",
+      "commits_together": 3,
+      "confidence": 0.158,
+      "lift": 2.42,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "tests/test_manylinux.py",
+      "b": "tests/test_specifiers.py",
+      "commits_together": 3,
+      "confidence": 0.231,
+      "lift": 2.39,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "docs/conf.py",
+      "b": "src/packaging/requirements.py",
+      "commits_together": 3,
+      "confidence": 0.158,
+      "lift": 2.29,
+      "connected_only_via_package_root": false
+    }
+  ],
+  "via_package_root": [
+    {
+      "a": "src/packaging/_manylinux.py",
+      "b": "src/packaging/metadata.py",
+      "commits_together": 8,
+      "confidence": 0.333,
+      "lift": 5.95,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_structures.py",
+      "b": "src/packaging/specifiers.py",
+      "commits_together": 8,
+      "confidence": 0.571,
+      "lift": 3.51,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_structures.py",
+      "b": "src/packaging/markers.py",
+      "commits_together": 7,
+      "confidence": 0.5,
+      "lift": 4.92,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_structures.py",
+      "b": "src/packaging/utils.py",
+      "commits_together": 6,
+      "confidence": 0.429,
+      "lift": 6.57,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_manylinux.py",
+      "b": "src/packaging/_tokenizer.py",
+      "commits_together": 6,
+      "confidence": 0.25,
+      "lift": 6.39,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_structures.py",
+      "b": "src/packaging/requirements.py",
+      "commits_together": 6,
+      "confidence": 0.429,
+      "lift": 6.2,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_structures.py",
+      "b": "src/packaging/tags.py",
+      "commits_together": 6,
+      "confidence": 0.429,
+      "lift": 2.86,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "noxfile.py",
+      "b": "src/packaging/_manylinux.py",
+      "commits_together": 6,
+      "confidence": 0.25,
+      "lift": 2.63,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_manylinux.py",
+      "b": "tests/test_musllinux.py",
+      "commits_together": 5,
+      "confidence": 0.5,
+      "lift": 29.5,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_manylinux.py",
+      "b": "src/packaging/_parser.py",
+      "commits_together": 5,
+      "confidence": 0.208,
+      "lift": 4.21,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_licenses.py",
+      "b": "tests/test_metadata.py",
+      "commits_together": 4,
+      "confidence": 0.8,
+      "lift": 21.16,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_elffile.py",
+      "b": "src/packaging/metadata.py",
+      "commits_together": 4,
+      "confidence": 0.5,
+      "lift": 8.92,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_manylinux.py",
+      "b": "tests/test_metadata.py",
+      "commits_together": 4,
+      "confidence": 0.308,
+      "lift": 8.14,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "noxfile.py",
+      "b": "src/packaging/_musllinux.py",
+      "commits_together": 4,
+      "confidence": 0.333,
+      "lift": 3.5,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_elffile.py",
+      "b": "src/packaging/specifiers.py",
+      "commits_together": 4,
+      "confidence": 0.5,
+      "lift": 3.07,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_manylinux.py",
+      "b": "src/packaging/requirements.py",
+      "commits_together": 4,
+      "confidence": 0.167,
+      "lift": 2.41,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_musllinux.py",
+      "b": "src/packaging/specifiers.py",
+      "commits_together": 4,
+      "confidence": 0.333,
+      "lift": 2.05,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_elffile.py",
+      "b": "tests/test_musllinux.py",
+      "commits_together": 3,
+      "confidence": 0.75,
+      "lift": 57.52,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_elffile.py",
+      "b": "tests/test_manylinux.py",
+      "commits_together": 3,
+      "confidence": 0.75,
+      "lift": 44.25,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_musllinux.py",
+      "b": "src/packaging/_tokenizer.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 6.39,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_elffile.py",
+      "b": "src/packaging/requirements.py",
+      "commits_together": 3,
+      "confidence": 0.375,
+      "lift": 5.43,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_musllinux.py",
+      "b": "src/packaging/_parser.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 5.05,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_musllinux.py",
+      "b": "src/packaging/metadata.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 4.46,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_musllinux.py",
+      "b": "src/packaging/requirements.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 3.62,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_musllinux.py",
+      "b": "src/packaging/markers.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 2.46,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_markers.py",
+      "b": "tests/test_utils.py",
+      "commits_together": 3,
+      "confidence": 0.125,
+      "lift": 2.13,
+      "connected_only_via_package_root": true
+    }
+  ],
+  "test_and_subject": [
+    {
+      "a": "docs/conf.py",
+      "b": "tests/__init__.py",
+      "commits_together": 3,
+      "confidence": 1.0,
+      "lift": 40.37,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "src/packaging/__init__.py",
+      "b": "tests/__init__.py",
+      "commits_together": 3,
+      "confidence": 1.0,
+      "lift": 17.04,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "noxfile.py",
+      "b": "tests/test_manylinux.py",
+      "commits_together": 3,
+      "confidence": 0.231,
+      "lift": 2.42,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "docs/conf.py",
+      "b": "tests/test_version.py",
+      "commits_together": 3,
+      "confidence": 0.158,
+      "lift": 2.24,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "src/packaging/licenses/__init__.py",
+      "b": "tests/test_metadata.py",
+      "commits_together": 5,
+      "confidence": 0.417,
+      "lift": 11.02,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/packaging/_manylinux.py",
+      "b": "tests/test_musllinux.py",
+      "commits_together": 4,
+      "confidence": 0.4,
+      "lift": 12.78,
+      "connected_only_via_package_root": true
+    }
+  ],
+  "imported_never_co_changed": [
+    {
+      "importer": "benchmarks/specifiers.py",
+      "imported": "src/packaging/version.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/_musllinux.py",
+      "imported": "tests/test_tags.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/_ranges.py",
+      "imported": "src/packaging/version.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/dependency_groups.py",
+      "imported": "src/packaging/requirements.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/markers.py",
+      "imported": "tests/conftest.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/markers.py",
+      "imported": "tests/test_pylock.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/markers.py",
+      "imported": "tests/test_pylock_select.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/ranges.py",
+      "imported": "src/packaging/version.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/requirements.py",
+      "imported": "tests/test_dependency_groups.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/requirements.py",
+      "imported": "tests/test_metadata.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/specifiers.py",
+      "imported": "tests/test_metadata.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/specifiers.py",
+      "imported": "tests/test_pylock.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/specifiers.py",
+      "imported": "tests/test_pylock_select.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/specifiers.py",
+      "imported": "tests/test_ranges.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/tags.py",
+      "imported": "tests/test_pylock_select.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/utils.py",
+      "imported": "tests/test_metadata.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/utils.py",
+      "imported": "tests/test_pylock.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/utils.py",
+      "imported": "tests/test_pylock_select.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/version.py",
+      "imported": "tests/test_metadata.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/version.py",
+      "imported": "tests/test_pylock.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/version.py",
+      "imported": "tests/test_pylock_select.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/packaging/version.py",
+      "imported": "tests/test_ranges.py",
+      "shared_commits": 0
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "commits": 2814,
+  "skipped_large_commits": 10,
+  "followed_renames": true,
+  "files_at_head": 37,
+  "import_edges": 107,
+  "unparseable_files": 0,
+  "coupled_pairs": 178,
+  "pairs_with_a_deleted_file": 405,
+  "explained_by_imports": 136,
+  "explained_share": 0.764,
+  "min_support": 3,
+  "min_lift": 2.0,
+  "unconnected": [
+    {
+      "a": "setup.py",
+      "b": "src/requests/__version__.py",
+      "commits_together": 8,
+      "confidence": 0.145,
+      "lift": 2.42,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "setup.py",
+      "b": "src/requests/help.py",
+      "commits_together": 5,
+      "confidence": 0.278,
+      "lift": 4.63,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "setup.py",
+      "b": "src/requests/_internal_utils.py",
+      "commits_together": 3,
+      "confidence": 0.3,
+      "lift": 5.0,
+      "connected_only_via_package_root": false
+    },
+    {
+      "a": "setup.py",
+      "b": "src/requests/packages.py",
+      "commits_together": 3,
+      "confidence": 0.273,
+      "lift": 4.54,
+      "connected_only_via_package_root": false
+    }
+  ],
+  "via_package_root": [
+    {
+      "a": "src/requests/__init__.py",
+      "b": "src/requests/compat.py",
+      "commits_together": 9,
+      "confidence": 0.191,
+      "lift": 2.88,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/compat.py",
+      "b": "src/requests/help.py",
+      "commits_together": 7,
+      "confidence": 0.389,
+      "lift": 23.28,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/__init__.py",
+      "b": "src/requests/help.py",
+      "commits_together": 7,
+      "confidence": 0.389,
+      "lift": 5.85,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/adapters.py",
+      "b": "src/requests/help.py",
+      "commits_together": 6,
+      "confidence": 0.333,
+      "lift": 5.55,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_testserver.py",
+      "b": "tests/test_utils.py",
+      "commits_together": 5,
+      "confidence": 0.333,
+      "lift": 13.59,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/auth.py",
+      "b": "src/requests/help.py",
+      "commits_together": 5,
+      "confidence": 0.278,
+      "lift": 6.41,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/help.py",
+      "b": "src/requests/sessions.py",
+      "commits_together": 5,
+      "confidence": 0.278,
+      "lift": 2.26,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/_internal_utils.py",
+      "b": "src/requests/help.py",
+      "commits_together": 4,
+      "confidence": 0.4,
+      "lift": 62.53,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/certs.py",
+      "b": "src/requests/hooks.py",
+      "commits_together": 4,
+      "confidence": 0.4,
+      "lift": 45.02,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/__init__.py",
+      "b": "src/requests/hooks.py",
+      "commits_together": 4,
+      "confidence": 0.16,
+      "lift": 2.41,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/help.py",
+      "b": "src/requests/hooks.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 18.76,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_utils.py",
+      "b": "tests/testserver/server.py",
+      "commits_together": 3,
+      "confidence": 0.214,
+      "lift": 8.74,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/exceptions.py",
+      "b": "src/requests/help.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 8.69,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/cookies.py",
+      "b": "src/requests/help.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 5.72,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/__init__.py",
+      "b": "src/requests/certs.py",
+      "commits_together": 3,
+      "confidence": 0.3,
+      "lift": 4.51,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/__init__.py",
+      "b": "src/requests/_internal_utils.py",
+      "commits_together": 3,
+      "confidence": 0.3,
+      "lift": 4.51,
+      "connected_only_via_package_root": true
+    }
+  ],
+  "test_and_subject": [
+    {
+      "a": "src/requests/utils.py",
+      "b": "tests/test_testserver.py",
+      "commits_together": 4,
+      "confidence": 0.267,
+      "lift": 2.6,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/hooks.py",
+      "b": "tests/test_testserver.py",
+      "commits_together": 3,
+      "confidence": 0.2,
+      "lift": 22.51,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/hooks.py",
+      "b": "tests/test_lowlevel.py",
+      "commits_together": 3,
+      "confidence": 0.125,
+      "lift": 14.07,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/hooks.py",
+      "b": "tests/test_utils.py",
+      "commits_together": 3,
+      "confidence": 0.12,
+      "lift": 4.89,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/auth.py",
+      "b": "tests/test_testserver.py",
+      "commits_together": 3,
+      "confidence": 0.2,
+      "lift": 4.61,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/requests/utils.py",
+      "b": "tests/testserver/server.py",
+      "commits_together": 3,
+      "confidence": 0.214,
+      "lift": 2.09,
+      "connected_only_via_package_root": true
+    }
+  ],
+  "imported_never_co_changed": [
+    {
+      "importer": "src/requests/__version__.py",
+      "imported": "src/requests/help.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/requests/__version__.py",
+      "imported": "src/requests/utils.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/requests/_internal_utils.py",
+      "imported": "tests/test_utils.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/requests/_types.py",
+      "imported": "src/requests/adapters.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/requests/_types.py",
+      "imported": "src/requests/api.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/requests/_types.py",
+      "imported": "src/requests/auth.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/requests/_types.py",
+      "imported": "src/requests/cookies.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/requests/_types.py",
+      "imported": "src/requests/hooks.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/requests/_types.py",
+      "imported": "src/requests/structures.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/requests/_types.py",
+      "imported": "src/requests/utils.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/requests/compat.py",
+      "imported": "tests/conftest.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/requests/compat.py",
+      "imported": "tests/test_lowlevel.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/requests/packages.py",
+      "imported": "tests/test_requests.py",
+      "shared_commits": 0
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "repo": "httpx",
+  "seconds": 0.4,
+  "commits": 974,
+  "skipped_large_commits": 5,
+  "train_commits": 779,
+  "test_commits": 195,
+  "files_at_head": 60,
+  "import_edges": 123,
+  "coupled_pairs": 888,
+  "min_support": 3,
+  "max_files_per_commit": 30,
+  "queries": 439,
+  "scores": [
+    {
+      "ranker": "frequency",
+      "mrr": 0.502,
+      "recall@1": 0.0663,
+      "recall@5": 0.1837,
+      "recall@10": 0.3073,
+      "recall@20": 0.5126
+    },
+    {
+      "ranker": "imports",
+      "mrr": 0.4828,
+      "recall@1": 0.0474,
+      "recall@5": 0.2257,
+      "recall@10": 0.3651,
+      "recall@20": 0.5385
+    },
+    {
+      "ranker": "cochange",
+      "mrr": 0.5531,
+      "recall@1": 0.0819,
+      "recall@5": 0.2561,
+      "recall@10": 0.3758,
+      "recall@20": 0.5887
+    },
+    {
+      "ranker": "both",
+      "mrr": 0.5544,
+      "recall@1": 0.0778,
+      "recall@5": 0.2627,
+      "recall@10": 0.3966,
+      "recall@20": 0.5822
+    }
+  ]
+}

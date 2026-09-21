@@ -1,0 +1,1342 @@
+{
+  "commits": 2014,
+  "skipped_large_commits": 9,
+  "followed_renames": true,
+  "files_at_head": 83,
+  "import_edges": 211,
+  "unparseable_files": 0,
+  "coupled_pairs": 468,
+  "pairs_with_a_deleted_file": 150,
+  "explained_by_imports": 280,
+  "explained_share": 0.5983,
+  "min_support": 3,
+  "min_lift": 2.0,
+  "unconnected": [],
+  "via_package_root": [
+    {
+      "a": "tests/test_basic.py",
+      "b": "tests/test_blueprints.py",
+      "commits_together": 35,
+      "confidence": 0.455,
+      "lift": 4.9,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_basic.py",
+      "b": "tests/test_helpers.py",
+      "commits_together": 35,
+      "confidence": 0.227,
+      "lift": 2.45,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_blueprints.py",
+      "b": "tests/test_helpers.py",
+      "commits_together": 29,
+      "confidence": 0.377,
+      "lift": 4.93,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_blueprints.py",
+      "b": "tests/test_testing.py",
+      "commits_together": 28,
+      "confidence": 0.389,
+      "lift": 10.17,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_helpers.py",
+      "b": "tests/test_testing.py",
+      "commits_together": 27,
+      "confidence": 0.375,
+      "lift": 4.9,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_blueprints.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 22,
+      "confidence": 0.489,
+      "lift": 12.79,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_basic.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 21,
+      "confidence": 0.467,
+      "lift": 5.03,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_templating.py",
+      "b": "tests/test_testing.py",
+      "commits_together": 20,
+      "confidence": 0.444,
+      "lift": 12.43,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_basic.py",
+      "b": "tests/test_config.py",
+      "commits_together": 20,
+      "confidence": 0.408,
+      "lift": 4.4,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_signals.py",
+      "b": "tests/test_testing.py",
+      "commits_together": 18,
+      "confidence": 0.6,
+      "lift": 16.78,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_config.py",
+      "b": "tests/test_testing.py",
+      "commits_together": 18,
+      "confidence": 0.367,
+      "lift": 10.28,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_helpers.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 18,
+      "confidence": 0.4,
+      "lift": 5.23,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_basic.py",
+      "b": "tests/test_signals.py",
+      "commits_together": 17,
+      "confidence": 0.567,
+      "lift": 6.1,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_config.py",
+      "b": "tests/test_helpers.py",
+      "commits_together": 17,
+      "confidence": 0.347,
+      "lift": 4.54,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_blueprints.py",
+      "b": "tests/test_config.py",
+      "commits_together": 16,
+      "confidence": 0.327,
+      "lift": 8.54,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_config.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 15,
+      "confidence": 0.333,
+      "lift": 13.7,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_blueprints.py",
+      "b": "tests/test_views.py",
+      "commits_together": 14,
+      "confidence": 0.609,
+      "lift": 15.92,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_blueprints.py",
+      "b": "tests/test_signals.py",
+      "commits_together": 14,
+      "confidence": 0.467,
+      "lift": 12.21,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_blueprints.py",
+      "b": "tests/test_reqctx.py",
+      "commits_together": 14,
+      "confidence": 0.389,
+      "lift": 10.17,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_helpers.py",
+      "b": "tests/test_signals.py",
+      "commits_together": 13,
+      "confidence": 0.433,
+      "lift": 5.67,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_helpers.py",
+      "b": "tests/test_reqctx.py",
+      "commits_together": 13,
+      "confidence": 0.361,
+      "lift": 4.72,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_subclassing.py",
+      "b": "tests/test_testing.py",
+      "commits_together": 12,
+      "confidence": 0.75,
+      "lift": 20.98,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_signals.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 12,
+      "confidence": 0.4,
+      "lift": 17.9,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_config.py",
+      "b": "tests/test_reqctx.py",
+      "commits_together": 12,
+      "confidence": 0.333,
+      "lift": 13.7,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_helpers.py",
+      "b": "tests/test_regression.py",
+      "commits_together": 12,
+      "confidence": 0.522,
+      "lift": 6.82,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_signals.py",
+      "b": "tests/test_views.py",
+      "commits_together": 11,
+      "confidence": 0.478,
+      "lift": 32.11,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_subclassing.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 11,
+      "confidence": 0.688,
+      "lift": 30.77,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_config.py",
+      "b": "tests/test_signals.py",
+      "commits_together": 11,
+      "confidence": 0.367,
+      "lift": 15.07,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_reqctx.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 11,
+      "confidence": 0.306,
+      "lift": 13.68,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_regression.py",
+      "b": "tests/test_testing.py",
+      "commits_together": 11,
+      "confidence": 0.478,
+      "lift": 13.38,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_blueprints.py",
+      "b": "tests/test_regression.py",
+      "commits_together": 11,
+      "confidence": 0.478,
+      "lift": 12.51,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_helpers.py",
+      "b": "tests/test_subclassing.py",
+      "commits_together": 11,
+      "confidence": 0.688,
+      "lift": 8.99,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_appctx.py",
+      "b": "tests/test_blueprints.py",
+      "commits_together": 11,
+      "confidence": 0.314,
+      "lift": 8.22,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_basic.py",
+      "b": "tests/test_subclassing.py",
+      "commits_together": 11,
+      "confidence": 0.688,
+      "lift": 7.4,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_basic.py",
+      "b": "tests/test_regression.py",
+      "commits_together": 11,
+      "confidence": 0.478,
+      "lift": 5.15,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/json/__init__.py",
+      "b": "src/flask/sansio/blueprints.py",
+      "commits_together": 11,
+      "confidence": 0.159,
+      "lift": 3.06,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_regression.py",
+      "b": "tests/test_reqctx.py",
+      "commits_together": 10,
+      "confidence": 0.435,
+      "lift": 24.32,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_templating.py",
+      "b": "tests/test_views.py",
+      "commits_together": 10,
+      "confidence": 0.435,
+      "lift": 19.46,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_blueprints.py",
+      "b": "tests/test_subclassing.py",
+      "commits_together": 10,
+      "confidence": 0.625,
+      "lift": 16.35,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/json/__init__.py",
+      "b": "src/flask/testing.py",
+      "commits_together": 10,
+      "confidence": 0.145,
+      "lift": 3.69,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/json/__init__.py",
+      "b": "src/flask/sessions.py",
+      "commits_together": 10,
+      "confidence": 0.145,
+      "lift": 3.47,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_regression.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 9,
+      "confidence": 0.391,
+      "lift": 17.51,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_appctx.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 9,
+      "confidence": 0.257,
+      "lift": 11.51,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_helpers.py",
+      "commits_together": 9,
+      "confidence": 0.36,
+      "lift": 4.71,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_appctx.py",
+      "b": "tests/test_helpers.py",
+      "commits_together": 9,
+      "confidence": 0.257,
+      "lift": 3.36,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_regression.py",
+      "b": "tests/test_views.py",
+      "commits_together": 8,
+      "confidence": 0.348,
+      "lift": 30.46,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_appctx.py",
+      "b": "tests/test_subclassing.py",
+      "commits_together": 8,
+      "confidence": 0.5,
+      "lift": 28.77,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_reqctx.py",
+      "b": "tests/test_subclassing.py",
+      "commits_together": 8,
+      "confidence": 0.5,
+      "lift": 27.97,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_regression.py",
+      "b": "tests/test_signals.py",
+      "commits_together": 8,
+      "confidence": 0.348,
+      "lift": 23.35,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_config.py",
+      "b": "tests/test_subclassing.py",
+      "commits_together": 8,
+      "confidence": 0.5,
+      "lift": 20.55,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_appctx.py",
+      "b": "tests/test_signals.py",
+      "commits_together": 8,
+      "confidence": 0.267,
+      "lift": 15.34,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_reqctx.py",
+      "b": "tests/test_signals.py",
+      "commits_together": 8,
+      "confidence": 0.267,
+      "lift": 14.92,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/ctx.py",
+      "b": "src/flask/json/__init__.py",
+      "commits_together": 8,
+      "confidence": 0.116,
+      "lift": 2.2,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_subclassing.py",
+      "b": "tests/test_views.py",
+      "commits_together": 7,
+      "confidence": 0.438,
+      "lift": 38.31,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_signals.py",
+      "b": "tests/test_subclassing.py",
+      "commits_together": 7,
+      "confidence": 0.438,
+      "lift": 29.37,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_config.py",
+      "b": "tests/test_regression.py",
+      "commits_together": 7,
+      "confidence": 0.304,
+      "lift": 12.51,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_appctx.py",
+      "b": "tests/test_config.py",
+      "commits_together": 7,
+      "confidence": 0.2,
+      "lift": 8.22,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/debughelpers.py",
+      "b": "src/flask/json/__init__.py",
+      "commits_together": 7,
+      "confidence": 0.233,
+      "lift": 6.81,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/json/__init__.py",
+      "b": "src/flask/templating.py",
+      "commits_together": 7,
+      "confidence": 0.132,
+      "lift": 3.86,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/json/__init__.py",
+      "b": "src/flask/sansio/scaffold.py",
+      "commits_together": 7,
+      "confidence": 0.125,
+      "lift": 3.65,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_appctx.py",
+      "b": "tests/test_regression.py",
+      "commits_together": 6,
+      "confidence": 0.261,
+      "lift": 15.01,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_config.py",
+      "b": "tests/test_views.py",
+      "commits_together": 6,
+      "confidence": 0.261,
+      "lift": 10.72,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_regression.py",
+      "b": "tests/test_subclassing.py",
+      "commits_together": 5,
+      "confidence": 0.312,
+      "lift": 27.36,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_config.py",
+      "b": "tests/test_instance_config.py",
+      "commits_together": 5,
+      "confidence": 0.385,
+      "lift": 15.81,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_reqctx.py",
+      "commits_together": 5,
+      "confidence": 0.2,
+      "lift": 11.19,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 5,
+      "confidence": 0.2,
+      "lift": 8.95,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_config.py",
+      "commits_together": 5,
+      "confidence": 0.2,
+      "lift": 8.22,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/json/__init__.py",
+      "b": "src/flask/views.py",
+      "commits_together": 5,
+      "confidence": 0.128,
+      "lift": 3.74,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_apps/cliapp/factory.py",
+      "b": "tests/test_cli.py",
+      "commits_together": 4,
+      "confidence": 1.0,
+      "lift": 26.5,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_instance_config.py",
+      "commits_together": 4,
+      "confidence": 0.308,
+      "lift": 24.79,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/json/__init__.py",
+      "b": "src/flask/logging.py",
+      "commits_together": 4,
+      "confidence": 0.2,
+      "lift": 5.84,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_cli.py",
+      "commits_together": 4,
+      "confidence": 0.16,
+      "lift": 4.24,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_blueprints.py",
+      "commits_together": 4,
+      "confidence": 0.16,
+      "lift": 4.18,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_helpers.py",
+      "b": "tests/test_instance_config.py",
+      "commits_together": 4,
+      "confidence": 0.308,
+      "lift": 4.02,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_basic.py",
+      "b": "tests/test_user_error_handler.py",
+      "commits_together": 4,
+      "confidence": 0.286,
+      "lift": 3.08,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/__init__.py",
+      "b": "src/flask/logging.py",
+      "commits_together": 4,
+      "confidence": 0.2,
+      "lift": 2.78,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_apps/blueprintapp/apps/admin/__init__.py",
+      "b": "tests/test_apps/blueprintapp/apps/frontend/__init__.py",
+      "commits_together": 3,
+      "confidence": 1.0,
+      "lift": 503.5,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "examples/javascript/js_example/views.py",
+      "b": "examples/tutorial/flaskr/auth.py",
+      "commits_together": 3,
+      "confidence": 0.75,
+      "lift": 302.1,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/type_check/typing_app_decorators.py",
+      "b": "tests/type_check/typing_route.py",
+      "commits_together": 3,
+      "confidence": 0.5,
+      "lift": 100.7,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_apps/subdomaintestmodule/__init__.py",
+      "b": "tests/test_views.py",
+      "commits_together": 3,
+      "confidence": 0.75,
+      "lift": 65.67,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_apps/subdomaintestmodule/__init__.py",
+      "b": "tests/test_signals.py",
+      "commits_together": 3,
+      "confidence": 0.75,
+      "lift": 50.35,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_apps/subdomaintestmodule/__init__.py",
+      "b": "tests/test_testing.py",
+      "commits_together": 3,
+      "confidence": 0.75,
+      "lift": 20.98,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_apps/subdomaintestmodule/__init__.py",
+      "b": "tests/test_blueprints.py",
+      "commits_together": 3,
+      "confidence": 0.75,
+      "lift": 19.62,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/logging.py",
+      "b": "src/flask/signals.py",
+      "commits_together": 3,
+      "confidence": 0.15,
+      "lift": 14.39,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_reqctx.py",
+      "b": "tests/test_user_error_handler.py",
+      "commits_together": 3,
+      "confidence": 0.214,
+      "lift": 11.99,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_logging.py",
+      "b": "tests/test_testing.py",
+      "commits_together": 3,
+      "confidence": 0.375,
+      "lift": 10.49,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_templating.py",
+      "b": "tests/test_user_error_handler.py",
+      "commits_together": 3,
+      "confidence": 0.214,
+      "lift": 9.59,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_apps/subdomaintestmodule/__init__.py",
+      "b": "tests/test_basic.py",
+      "commits_together": 3,
+      "confidence": 0.75,
+      "lift": 8.08,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_basic.py",
+      "b": "tests/test_json_tag.py",
+      "commits_together": 3,
+      "confidence": 0.6,
+      "lift": 6.46,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_testing.py",
+      "b": "tests/test_user_error_handler.py",
+      "commits_together": 3,
+      "confidence": 0.214,
+      "lift": 5.99,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_blueprints.py",
+      "b": "tests/test_user_error_handler.py",
+      "commits_together": 3,
+      "confidence": 0.214,
+      "lift": 5.6,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_basic.py",
+      "b": "tests/type_check/typing_app_decorators.py",
+      "commits_together": 3,
+      "confidence": 0.5,
+      "lift": 5.39,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "examples/tutorial/flaskr/blog.py",
+      "b": "src/flask/helpers.py",
+      "commits_together": 3,
+      "confidence": 0.75,
+      "lift": 5.34,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/config.py",
+      "b": "src/flask/signals.py",
+      "commits_together": 3,
+      "confidence": 0.143,
+      "lift": 4.72,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_cli.py",
+      "b": "tests/test_regression.py",
+      "commits_together": 3,
+      "confidence": 0.13,
+      "lift": 3.46,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "examples/tutorial/flaskr/blog.py",
+      "b": "src/flask/sansio/app.py",
+      "commits_together": 3,
+      "confidence": 0.75,
+      "lift": 3.22,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_helpers.py",
+      "b": "tests/test_user_error_handler.py",
+      "commits_together": 3,
+      "confidence": 0.214,
+      "lift": 2.8,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_async.py",
+      "b": "tests/test_basic.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 2.69,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_basic.py",
+      "b": "tests/test_instance_config.py",
+      "commits_together": 3,
+      "confidence": 0.231,
+      "lift": 2.49,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_cli.py",
+      "b": "tests/test_reqctx.py",
+      "commits_together": 3,
+      "confidence": 0.083,
+      "lift": 2.21,
+      "connected_only_via_package_root": true
+    }
+  ],
+  "test_and_subject": [
+    {
+      "a": "src/flask/sansio/blueprints.py",
+      "b": "tests/test_blueprints.py",
+      "commits_together": 27,
+      "confidence": 0.351,
+      "lift": 6.73,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/json/__init__.py",
+      "b": "tests/test_helpers.py",
+      "commits_together": 19,
+      "confidence": 0.275,
+      "lift": 3.6,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/config.py",
+      "b": "tests/test_config.py",
+      "commits_together": 14,
+      "confidence": 0.286,
+      "lift": 9.43,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/sansio/app.py",
+      "b": "tests/test_user_error_handler.py",
+      "commits_together": 11,
+      "confidence": 0.786,
+      "lift": 3.37,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/helpers.py",
+      "b": "tests/test_async.py",
+      "commits_together": 7,
+      "confidence": 0.583,
+      "lift": 4.15,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/sansio/app.py",
+      "b": "tests/test_async.py",
+      "commits_together": 7,
+      "confidence": 0.583,
+      "lift": 2.5,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/templating.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 6,
+      "confidence": 0.133,
+      "lift": 5.07,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/signals.py",
+      "b": "tests/test_signals.py",
+      "commits_together": 5,
+      "confidence": 0.238,
+      "lift": 15.98,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/testing.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 5,
+      "confidence": 0.111,
+      "lift": 2.83,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/config.py",
+      "b": "tests/test_testing.py",
+      "commits_together": 5,
+      "confidence": 0.082,
+      "lift": 2.29,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/sansio/scaffold.py",
+      "b": "tests/test_async.py",
+      "commits_together": 4,
+      "confidence": 0.333,
+      "lift": 11.99,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/cli.py",
+      "b": "tests/test_apps/cliapp/factory.py",
+      "commits_together": 4,
+      "confidence": 1.0,
+      "lift": 11.51,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/debughelpers.py",
+      "b": "tests/test_reqctx.py",
+      "commits_together": 4,
+      "confidence": 0.133,
+      "lift": 7.46,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/sansio/blueprints.py",
+      "b": "tests/test_async.py",
+      "commits_together": 4,
+      "confidence": 0.333,
+      "lift": 6.39,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/templating.py",
+      "b": "tests/test_reqctx.py",
+      "commits_together": 4,
+      "confidence": 0.111,
+      "lift": 4.22,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/app.py",
+      "b": "tests/test_blueprints.py",
+      "commits_together": 4,
+      "confidence": 0.129,
+      "lift": 3.37,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/views.py",
+      "b": "tests/test_blueprints.py",
+      "commits_together": 4,
+      "confidence": 0.103,
+      "lift": 2.68,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/testing.py",
+      "b": "tests/test_config.py",
+      "commits_together": 4,
+      "confidence": 0.082,
+      "lift": 2.08,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/app.py",
+      "b": "tests/type_check/typing_app_decorators.py",
+      "commits_together": 3,
+      "confidence": 0.5,
+      "lift": 32.48,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/ctx.py",
+      "b": "tests/test_converters.py",
+      "commits_together": 3,
+      "confidence": 1.0,
+      "lift": 19.0,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/sessions.py",
+      "b": "tests/type_check/typing_app_decorators.py",
+      "commits_together": 3,
+      "confidence": 0.5,
+      "lift": 11.99,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/testing.py",
+      "b": "tests/test_json.py",
+      "commits_together": 3,
+      "confidence": 0.333,
+      "lift": 8.5,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/sansio/scaffold.py",
+      "b": "tests/test_instance_config.py",
+      "commits_together": 3,
+      "confidence": 0.231,
+      "lift": 8.3,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "examples/tutorial/flaskr/blog.py",
+      "b": "tests/test_basic.py",
+      "commits_together": 3,
+      "confidence": 0.75,
+      "lift": 8.08,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/json/provider.py",
+      "b": "tests/test_testing.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 6.99,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/json/provider.py",
+      "b": "tests/test_blueprints.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 6.54,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/debughelpers.py",
+      "b": "tests/test_templating.py",
+      "commits_together": 3,
+      "confidence": 0.1,
+      "lift": 4.48,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/sansio/scaffold.py",
+      "b": "tests/conftest.py",
+      "commits_together": 3,
+      "confidence": 0.12,
+      "lift": 4.32,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/debughelpers.py",
+      "b": "tests/test_config.py",
+      "commits_together": 3,
+      "confidence": 0.1,
+      "lift": 4.11,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/templating.py",
+      "b": "tests/test_signals.py",
+      "commits_together": 3,
+      "confidence": 0.1,
+      "lift": 3.8,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/helpers.py",
+      "b": "tests/type_check/typing_app_decorators.py",
+      "commits_together": 3,
+      "confidence": 0.5,
+      "lift": 3.56,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/json/__init__.py",
+      "b": "tests/conftest.py",
+      "commits_together": 3,
+      "confidence": 0.12,
+      "lift": 3.5,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/testing.py",
+      "b": "tests/conftest.py",
+      "commits_together": 3,
+      "confidence": 0.12,
+      "lift": 3.06,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/config.py",
+      "b": "tests/test_reqctx.py",
+      "commits_together": 3,
+      "confidence": 0.083,
+      "lift": 2.75,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/cli.py",
+      "b": "tests/test_instance_config.py",
+      "commits_together": 3,
+      "confidence": 0.231,
+      "lift": 2.66,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/debughelpers.py",
+      "b": "tests/test_blueprints.py",
+      "commits_together": 3,
+      "confidence": 0.1,
+      "lift": 2.62,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "src/flask/sansio/app.py",
+      "b": "tests/type_check/typing_app_decorators.py",
+      "commits_together": 3,
+      "confidence": 0.5,
+      "lift": 2.15,
+      "connected_only_via_package_root": true
+    }
+  ],
+  "imported_never_co_changed": [
+    {
+      "importer": "examples/tutorial/flaskr/auth.py",
+      "imported": "src/flask/__init__.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "src/flask/app.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "src/flask/blueprints.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/conftest.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_appctx.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_apps/blueprintapp/__init__.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_async.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_blueprints.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_cli.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_config.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_instance_config.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_json.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_regression.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_reqctx.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_subclassing.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_templating.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_testing.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/test_user_error_handler.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/type_check/typing_app_decorators.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/__init__.py",
+      "imported": "tests/type_check/typing_route.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/app.py",
+      "imported": "src/flask/globals.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/app.py",
+      "imported": "src/flask/signals.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/blueprints.py",
+      "imported": "src/flask/cli.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/blueprints.py",
+      "imported": "src/flask/debughelpers.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/blueprints.py",
+      "imported": "src/flask/globals.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/blueprints.py",
+      "imported": "src/flask/helpers.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/blueprints.py",
+      "imported": "src/flask/sansio/blueprints.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/blueprints.py",
+      "imported": "src/flask/typing.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/blueprints.py",
+      "imported": "src/flask/wrappers.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/globals.py",
+      "imported": "tests/conftest.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/globals.py",
+      "imported": "tests/test_appctx.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/globals.py",
+      "imported": "tests/test_testing.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/json/__init__.py",
+      "imported": "tests/test_config.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/json/provider.py",
+      "imported": "tests/test_json.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/json/tag.py",
+      "imported": "tests/test_json_tag.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/logging.py",
+      "imported": "tests/test_templating.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/sessions.py",
+      "imported": "tests/test_reqctx.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/templating.py",
+      "imported": "tests/type_check/typing_route.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/testing.py",
+      "imported": "tests/test_views.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/typing.py",
+      "imported": "tests/test_basic.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/views.py",
+      "imported": "tests/test_async.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/views.py",
+      "imported": "tests/test_helpers.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "src/flask/wrappers.py",
+      "imported": "tests/type_check/typing_route.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "tests/test_apps/blueprintapp/__init__.py",
+      "imported": "tests/test_blueprints.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "tests/test_apps/blueprintapp/__init__.py",
+      "imported": "tests/test_templating.py",
+      "shared_commits": 0
+    }
+  ]
+}

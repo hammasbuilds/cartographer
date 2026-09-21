@@ -1,0 +1,48 @@
+{
+  "repo": "packaging",
+  "seconds": 0.6,
+  "commits": 767,
+  "skipped_large_commits": 0,
+  "train_commits": 613,
+  "test_commits": 154,
+  "files_at_head": 74,
+  "import_edges": 155,
+  "coupled_pairs": 217,
+  "min_support": 3,
+  "max_files_per_commit": 30,
+  "queries": 313,
+  "scores": [
+    {
+      "ranker": "frequency",
+      "mrr": 0.3894,
+      "recall@1": 0.0622,
+      "recall@5": 0.3212,
+      "recall@10": 0.4537,
+      "recall@20": 0.6805
+    },
+    {
+      "ranker": "imports",
+      "mrr": 0.6005,
+      "recall@1": 0.2433,
+      "recall@5": 0.565,
+      "recall@10": 0.736,
+      "recall@20": 0.8191
+    },
+    {
+      "ranker": "cochange",
+      "mrr": 0.6607,
+      "recall@1": 0.3657,
+      "recall@5": 0.5243,
+      "recall@10": 0.6172,
+      "recall@20": 0.7035
+    },
+    {
+      "ranker": "both",
+      "mrr": 0.7065,
+      "recall@1": 0.3858,
+      "recall@5": 0.6095,
+      "recall@10": 0.7376,
+      "recall@20": 0.8294
+    }
+  ]
+}

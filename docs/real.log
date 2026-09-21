@@ -1,0 +1,480 @@
+##### click
+============================================================================
+CARTOGRAPHER - the declared map against the revealed one
+============================================================================
+1304 commits, 90 files at HEAD, 170 import edges
+5 commits dropped for touching more than 30 files
+
+Of 312 coupled file pairs, the import graph explains 186 - 60%.
+  (a direct import, or a path of at most 2 hops that does not run through a package root)
+  104 further pairs involve a file that no longer exists and are not counted either way.
+
+   0  change together, nothing in the code connects them
+  57  connected only through a package __init__.py
+  28  a test and the module it covers (not a finding, see below)
+  18  imported but never changed together
+
+----------------------------------------------------------------------------
+CONNECTED ONLY THROUGH A PACKAGE ROOT
+Neither imports the other; both are re-exported by the same __init__.py,
+so the code records that they are in one package and nothing more.
+----------------------------------------------------------------------------
+    8 commits together   confidence 0.21   lift 4.2
+      src/click/_winconsole.py
+      src/click/parser.py
+    8 commits together   confidence 0.73   lift 2.3
+      examples/repo/repo.py
+      src/click/core.py
+    7 commits together   confidence 0.18   lift 2.7
+      src/click/_winconsole.py
+      src/click/decorators.py
+    6 commits together   confidence 0.50   lift 5.1
+      examples/termui/termui.py
+      src/click/_termui_impl.py
+    6 commits together   confidence 0.50   lift 4.8
+      examples/termui/termui.py
+      src/click/termui.py
+    6 commits together   confidence 0.14   lift 3.3
+      tests/test_arguments.py
+      tests/test_testing.py
+  ... and 51 more
+
+----------------------------------------------------------------------------
+A TEST AND ITS SUBJECT (28 pairs)
+Listed apart because it is not a discovery. It appears here at all
+because the test imports the package rather than the module, so nothing
+in the code says which module the test covers.
+----------------------------------------------------------------------------
+   36 commits together   confidence 0.88   lift 2.7
+      src/click/core.py
+      tests/test_commands.py
+   18 commits together   confidence 0.33   lift 3.2
+      src/click/types.py
+      tests/test_basic.py
+   12 commits together   confidence 0.75   lift 2.3
+      src/click/core.py
+      tests/test_chain.py
+  ... and 25 more
+
+----------------------------------------------------------------------------
+IMPORTED, NEVER CHANGED TOGETHER
+A stable interface, or an import that outlived its use. Both look alike
+from here, so this is a list to read, not a verdict.
+----------------------------------------------------------------------------
+  0 shared commits   examples/aliases/aliases.py  ->  src/click/__init__.py
+  0 shared commits   examples/complex/complex/cli.py  ->  src/click/__init__.py
+  0 shared commits   examples/imagepipe/imagepipe.py  ->  src/click/__init__.py
+  0 shared commits   examples/repo/repo.py  ->  src/click/__init__.py
+  0 shared commits   examples/termui/termui.py  ->  src/click/__init__.py
+  0 shared commits   examples/validation/validation.py  ->  src/click/__init__.py
+  ... and 12 more
+
+wrote docs\map_click.json
+========================================================================
+PREDICTING THE NEXT COMMIT - click
+========================================================================
+1304 commits (5 too large, dropped)
+train 1043  ->  test 261   (split by time, 80/20)
+90 files, 170 import edges, 375 coupled pairs
+425 held-out queries, 0.6s
+
+ranker           MRR     r@1     r@5    r@10    r@20
+------------------------------------------------------------------------
+frequency      0.449   0.150   0.277   0.449   0.745
+imports        0.365   0.065   0.350   0.504   0.754
+cochange       0.586   0.230   0.463   0.609   0.769
+both           0.588   0.228   0.471   0.615   0.764
+
+wrote docs\bench_click.json
+##### requests
+============================================================================
+CARTOGRAPHER - the declared map against the revealed one
+============================================================================
+2814 commits, 37 files at HEAD, 107 import edges
+10 commits dropped for touching more than 30 files
+
+Of 178 coupled file pairs, the import graph explains 136 - 76%.
+  (a direct import, or a path of at most 2 hops that does not run through a package root)
+  405 further pairs involve a file that no longer exists and are not counted either way.
+
+   4  change together, nothing in the code connects them
+  16  connected only through a package __init__.py
+   6  a test and the module it covers (not a finding, see below)
+  13  imported but never changed together
+
+----------------------------------------------------------------------------
+NOTHING IN THE CODE CONNECTS THESE
+Something links them that the source does not state.
+----------------------------------------------------------------------------
+    8 commits together   confidence 0.15   lift 2.4
+      setup.py
+      src/requests/__version__.py
+    5 commits together   confidence 0.28   lift 4.6
+      setup.py
+      src/requests/help.py
+    3 commits together   confidence 0.30   lift 5.0
+      setup.py
+      src/requests/_internal_utils.py
+    3 commits together   confidence 0.27   lift 4.5
+      setup.py
+      src/requests/packages.py
+
+----------------------------------------------------------------------------
+CONNECTED ONLY THROUGH A PACKAGE ROOT
+Neither imports the other; both are re-exported by the same __init__.py,
+so the code records that they are in one package and nothing more.
+----------------------------------------------------------------------------
+    9 commits together   confidence 0.19   lift 2.9
+      src/requests/__init__.py
+      src/requests/compat.py
+    7 commits together   confidence 0.39   lift 23.3
+      src/requests/compat.py
+      src/requests/help.py
+    7 commits together   confidence 0.39   lift 5.9
+      src/requests/__init__.py
+      src/requests/help.py
+    6 commits together   confidence 0.33   lift 5.6
+      src/requests/adapters.py
+      src/requests/help.py
+    5 commits together   confidence 0.33   lift 13.6
+      tests/test_testserver.py
+      tests/test_utils.py
+    5 commits together   confidence 0.28   lift 6.4
+      src/requests/auth.py
+      src/requests/help.py
+  ... and 10 more
+
+----------------------------------------------------------------------------
+A TEST AND ITS SUBJECT (6 pairs)
+Listed apart because it is not a discovery. It appears here at all
+because the test imports the package rather than the module, so nothing
+in the code says which module the test covers.
+----------------------------------------------------------------------------
+    4 commits together   confidence 0.27   lift 2.6
+      src/requests/utils.py
+      tests/test_testserver.py
+    3 commits together   confidence 0.20   lift 22.5
+      src/requests/hooks.py
+      tests/test_testserver.py
+    3 commits together   confidence 0.12   lift 14.1
+      src/requests/hooks.py
+      tests/test_lowlevel.py
+  ... and 3 more
+
+----------------------------------------------------------------------------
+IMPORTED, NEVER CHANGED TOGETHER
+A stable interface, or an import that outlived its use. Both look alike
+from here, so this is a list to read, not a verdict.
+----------------------------------------------------------------------------
+  0 shared commits   src/requests/__version__.py  ->  src/requests/help.py
+  0 shared commits   src/requests/__version__.py  ->  src/requests/utils.py
+  0 shared commits   src/requests/_internal_utils.py  ->  tests/test_utils.py
+  0 shared commits   src/requests/_types.py  ->  src/requests/adapters.py
+  0 shared commits   src/requests/_types.py  ->  src/requests/api.py
+  0 shared commits   src/requests/_types.py  ->  src/requests/auth.py
+  ... and 7 more
+
+wrote docs\map_requests.json
+========================================================================
+PREDICTING THE NEXT COMMIT - requests
+========================================================================
+2814 commits (10 too large, dropped)
+train 2251  ->  test 563   (split by time, 80/20)
+37 files, 107 import edges, 326 coupled pairs
+463 held-out queries, 0.4s
+
+ranker           MRR     r@1     r@5    r@10    r@20
+------------------------------------------------------------------------
+frequency      0.577   0.137   0.547   0.702   0.891
+imports        0.599   0.185   0.510   0.700   0.868
+cochange       0.634   0.199   0.595   0.748   0.891
+both           0.630   0.202   0.600   0.737   0.892
+
+wrote docs\bench_requests.json
+##### flask
+============================================================================
+CARTOGRAPHER - the declared map against the revealed one
+============================================================================
+2014 commits, 83 files at HEAD, 211 import edges
+9 commits dropped for touching more than 30 files
+
+Of 468 coupled file pairs, the import graph explains 280 - 60%.
+  (a direct import, or a path of at most 2 hops that does not run through a package root)
+  150 further pairs involve a file that no longer exists and are not counted either way.
+
+   0  change together, nothing in the code connects them
+ 100  connected only through a package __init__.py
+  37  a test and the module it covers (not a finding, see below)
+  45  imported but never changed together
+
+----------------------------------------------------------------------------
+CONNECTED ONLY THROUGH A PACKAGE ROOT
+Neither imports the other; both are re-exported by the same __init__.py,
+so the code records that they are in one package and nothing more.
+----------------------------------------------------------------------------
+   35 commits together   confidence 0.45   lift 4.9
+      tests/test_basic.py
+      tests/test_blueprints.py
+   35 commits together   confidence 0.23   lift 2.4
+      tests/test_basic.py
+      tests/test_helpers.py
+   29 commits together   confidence 0.38   lift 4.9
+      tests/test_blueprints.py
+      tests/test_helpers.py
+   28 commits together   confidence 0.39   lift 10.2
+      tests/test_blueprints.py
+      tests/test_testing.py
+   27 commits together   confidence 0.38   lift 4.9
+      tests/test_helpers.py
+      tests/test_testing.py
+   22 commits together   confidence 0.49   lift 12.8
+      tests/test_blueprints.py
+      tests/test_templating.py
+  ... and 94 more
+
+----------------------------------------------------------------------------
+A TEST AND ITS SUBJECT (37 pairs)
+Listed apart because it is not a discovery. It appears here at all
+because the test imports the package rather than the module, so nothing
+in the code says which module the test covers.
+----------------------------------------------------------------------------
+   27 commits together   confidence 0.35   lift 6.7
+      src/flask/sansio/blueprints.py
+      tests/test_blueprints.py
+   19 commits together   confidence 0.28   lift 3.6
+      src/flask/json/__init__.py
+      tests/test_helpers.py
+   14 commits together   confidence 0.29   lift 9.4
+      src/flask/config.py
+      tests/test_config.py
+  ... and 34 more
+
+----------------------------------------------------------------------------
+IMPORTED, NEVER CHANGED TOGETHER
+A stable interface, or an import that outlived its use. Both look alike
+from here, so this is a list to read, not a verdict.
+----------------------------------------------------------------------------
+  0 shared commits   examples/tutorial/flaskr/auth.py  ->  src/flask/__init__.py
+  0 shared commits   src/flask/__init__.py  ->  src/flask/app.py
+  0 shared commits   src/flask/__init__.py  ->  src/flask/blueprints.py
+  0 shared commits   src/flask/__init__.py  ->  tests/conftest.py
+  0 shared commits   src/flask/__init__.py  ->  tests/test_appctx.py
+  0 shared commits   src/flask/__init__.py  ->  tests/test_apps/blueprintapp/__init__.py
+  ... and 39 more
+
+wrote docs\map_flask.json
+========================================================================
+PREDICTING THE NEXT COMMIT - flask
+========================================================================
+2014 commits (9 too large, dropped)
+train 1611  ->  test 403   (split by time, 80/20)
+83 files, 211 import edges, 441 coupled pairs
+692 held-out queries, 0.6s
+
+ranker           MRR     r@1     r@5    r@10    r@20
+------------------------------------------------------------------------
+frequency      0.620   0.128   0.302   0.400   0.645
+imports        0.554   0.126   0.330   0.479   0.694
+cochange       0.653   0.167   0.372   0.489   0.660
+both           0.625   0.160   0.378   0.519   0.708
+
+wrote docs\bench_flask.json
+##### httpx
+============================================================================
+CARTOGRAPHER - the declared map against the revealed one
+============================================================================
+974 commits, 60 files at HEAD, 123 import edges
+5 commits dropped for touching more than 30 files
+
+Of 610 coupled file pairs, the import graph explains 202 - 33%.
+  (a direct import, or a path of at most 2 hops that does not run through a package root)
+  517 further pairs involve a file that no longer exists and are not counted either way.
+
+   0  change together, nothing in the code connects them
+ 147  connected only through a package __init__.py
+ 119  a test and the module it covers (not a finding, see below)
+  11  imported but never changed together
+
+----------------------------------------------------------------------------
+CONNECTED ONLY THROUGH A PACKAGE ROOT
+Neither imports the other; both are re-exported by the same __init__.py,
+so the code records that they are in one package and nothing more.
+----------------------------------------------------------------------------
+   41 commits together   confidence 0.76   lift 8.6
+      tests/client/test_async_client.py
+      tests/client/test_client.py
+   23 commits together   confidence 0.56   lift 7.9
+      tests/models/test_responses.py
+      tests/test_decoders.py
+   23 commits together   confidence 0.38   lift 4.8
+      tests/client/test_auth.py
+      tests/client/test_redirects.py
+   19 commits together   confidence 0.28   lift 3.1
+      tests/client/test_client.py
+      tests/models/test_responses.py
+   16 commits together   confidence 0.64   lift 8.0
+      tests/client/test_cookies.py
+      tests/client/test_redirects.py
+   16 commits together   confidence 0.62   lift 7.7
+      tests/client/test_headers.py
+      tests/client/test_redirects.py
+  ... and 141 more
+
+----------------------------------------------------------------------------
+A TEST AND ITS SUBJECT (119 pairs)
+Listed apart because it is not a discovery. It appears here at all
+because the test imports the package rather than the module, so nothing
+in the code says which module the test covers.
+----------------------------------------------------------------------------
+   52 commits together   confidence 0.75   lift 2.9
+      httpx/_models.py
+      tests/models/test_responses.py
+   47 commits together   confidence 0.55   lift 2.2
+      httpx/_client.py
+      tests/client/test_client.py
+   47 commits together   confidence 0.55   lift 2.1
+      httpx/_models.py
+      tests/client/test_client.py
+  ... and 116 more
+
+----------------------------------------------------------------------------
+IMPORTED, NEVER CHANGED TOGETHER
+A stable interface, or an import that outlived its use. Both look alike
+from here, so this is a list to read, not a verdict.
+----------------------------------------------------------------------------
+  0 shared commits   httpx/__init__.py  ->  tests/client/test_event_hooks.py
+  0 shared commits   httpx/__init__.py  ->  tests/models/test_cookies.py
+  0 shared commits   httpx/__init__.py  ->  tests/models/test_headers.py
+  0 shared commits   httpx/__init__.py  ->  tests/models/test_queryparams.py
+  0 shared commits   httpx/__init__.py  ->  tests/test_auth.py
+  0 shared commits   httpx/__init__.py  ->  tests/test_main.py
+  ... and 5 more
+
+wrote docs\map_httpx.json
+========================================================================
+PREDICTING THE NEXT COMMIT - httpx
+========================================================================
+974 commits (5 too large, dropped)
+train 779  ->  test 195   (split by time, 80/20)
+60 files, 123 import edges, 888 coupled pairs
+439 held-out queries, 0.4s
+
+ranker           MRR     r@1     r@5    r@10    r@20
+------------------------------------------------------------------------
+frequency      0.502   0.066   0.184   0.307   0.513
+imports        0.483   0.047   0.226   0.365   0.538
+cochange       0.553   0.082   0.256   0.376   0.589
+both           0.554   0.078   0.263   0.397   0.582
+
+wrote docs\bench_httpx.json
+##### packaging
+============================================================================
+CARTOGRAPHER - the declared map against the revealed one
+============================================================================
+767 commits, 74 files at HEAD, 155 import edges
+
+Of 203 coupled file pairs, the import graph explains 115 - 57%.
+  (a direct import, or a path of at most 2 hops that does not run through a package root)
+  63 further pairs involve a file that no longer exists and are not counted either way.
+
+  13  change together, nothing in the code connects them
+  26  connected only through a package __init__.py
+   6  a test and the module it covers (not a finding, see below)
+  22  imported but never changed together
+
+----------------------------------------------------------------------------
+NOTHING IN THE CODE CONNECTS THESE
+Something links them that the source does not state.
+----------------------------------------------------------------------------
+    8 commits together   confidence 0.42   lift 7.2
+      docs/conf.py
+      src/packaging/__init__.py
+    6 commits together   confidence 0.32   lift 3.3
+      docs/conf.py
+      noxfile.py
+    5 commits together   confidence 0.26   lift 2.6
+      docs/conf.py
+      src/packaging/markers.py
+    5 commits together   confidence 0.26   lift 2.1
+      docs/conf.py
+      src/packaging/version.py
+    4 commits together   confidence 0.50   lift 12.8
+      src/packaging/_elffile.py
+      src/packaging/_tokenizer.py
+    4 commits together   confidence 0.29   lift 11.5
+      docs/conf.py
+      src/packaging/_structures.py
+  ... and 7 more
+
+----------------------------------------------------------------------------
+CONNECTED ONLY THROUGH A PACKAGE ROOT
+Neither imports the other; both are re-exported by the same __init__.py,
+so the code records that they are in one package and nothing more.
+----------------------------------------------------------------------------
+    8 commits together   confidence 0.33   lift 5.9
+      src/packaging/_manylinux.py
+      src/packaging/metadata.py
+    8 commits together   confidence 0.57   lift 3.5
+      src/packaging/_structures.py
+      src/packaging/specifiers.py
+    7 commits together   confidence 0.50   lift 4.9
+      src/packaging/_structures.py
+      src/packaging/markers.py
+    6 commits together   confidence 0.43   lift 6.6
+      src/packaging/_structures.py
+      src/packaging/utils.py
+    6 commits together   confidence 0.25   lift 6.4
+      src/packaging/_manylinux.py
+      src/packaging/_tokenizer.py
+    6 commits together   confidence 0.43   lift 6.2
+      src/packaging/_structures.py
+      src/packaging/requirements.py
+  ... and 20 more
+
+----------------------------------------------------------------------------
+A TEST AND ITS SUBJECT (6 pairs)
+Listed apart because it is not a discovery. It appears here at all
+because the test imports the package rather than the module, so nothing
+in the code says which module the test covers.
+----------------------------------------------------------------------------
+    3 commits together   confidence 1.00   lift 40.4
+      docs/conf.py
+      tests/__init__.py
+    3 commits together   confidence 1.00   lift 17.0
+      src/packaging/__init__.py
+      tests/__init__.py
+    3 commits together   confidence 0.23   lift 2.4
+      noxfile.py
+      tests/test_manylinux.py
+  ... and 3 more
+
+----------------------------------------------------------------------------
+IMPORTED, NEVER CHANGED TOGETHER
+A stable interface, or an import that outlived its use. Both look alike
+from here, so this is a list to read, not a verdict.
+----------------------------------------------------------------------------
+  0 shared commits   benchmarks/specifiers.py  ->  src/packaging/version.py
+  0 shared commits   src/packaging/_musllinux.py  ->  tests/test_tags.py
+  0 shared commits   src/packaging/_ranges.py  ->  src/packaging/version.py
+  0 shared commits   src/packaging/dependency_groups.py  ->  src/packaging/requirements.py
+  0 shared commits   src/packaging/markers.py  ->  tests/conftest.py
+  0 shared commits   src/packaging/markers.py  ->  tests/test_pylock.py
+  ... and 16 more
+
+wrote docs\map_packaging.json
+========================================================================
+PREDICTING THE NEXT COMMIT - packaging
+========================================================================
+767 commits (0 too large, dropped)
+train 613  ->  test 154   (split by time, 80/20)
+74 files, 155 import edges, 217 coupled pairs
+313 held-out queries, 0.6s
+
+ranker           MRR     r@1     r@5    r@10    r@20
+------------------------------------------------------------------------
+frequency      0.389   0.062   0.321   0.454   0.680
+imports        0.601   0.243   0.565   0.736   0.819
+cochange       0.661   0.366   0.524   0.617   0.704
+both           0.707   0.386   0.610   0.738   0.829
+
+wrote docs\bench_packaging.json

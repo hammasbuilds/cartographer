@@ -1,0 +1,2204 @@
+{
+  "commits": 974,
+  "skipped_large_commits": 5,
+  "followed_renames": true,
+  "files_at_head": 60,
+  "import_edges": 123,
+  "unparseable_files": 0,
+  "coupled_pairs": 610,
+  "pairs_with_a_deleted_file": 517,
+  "explained_by_imports": 202,
+  "explained_share": 0.3311,
+  "min_support": 3,
+  "min_lift": 2.0,
+  "unconnected": [],
+  "via_package_root": [
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/client/test_client.py",
+      "commits_together": 41,
+      "confidence": 0.759,
+      "lift": 8.6,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/models/test_responses.py",
+      "b": "tests/test_decoders.py",
+      "commits_together": 23,
+      "confidence": 0.561,
+      "lift": 7.92,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 23,
+      "confidence": 0.383,
+      "lift": 4.79,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/models/test_responses.py",
+      "commits_together": 19,
+      "confidence": 0.275,
+      "lift": 3.12,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_cookies.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 16,
+      "confidence": 0.64,
+      "lift": 7.99,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_headers.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 16,
+      "confidence": 0.615,
+      "lift": 7.68,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 16,
+      "confidence": 0.205,
+      "lift": 2.32,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_redirects.py",
+      "b": "tests/models/test_requests.py",
+      "commits_together": 15,
+      "confidence": 0.385,
+      "lift": 4.8,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 15,
+      "confidence": 0.278,
+      "lift": 3.47,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/client/test_cookies.py",
+      "commits_together": 14,
+      "confidence": 0.56,
+      "lift": 9.09,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/models/test_requests.py",
+      "b": "tests/models/test_responses.py",
+      "commits_together": 14,
+      "confidence": 0.359,
+      "lift": 5.07,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/conftest.py",
+      "commits_together": 14,
+      "confidence": 0.264,
+      "lift": 4.76,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 14,
+      "confidence": 0.286,
+      "lift": 4.64,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_redirects.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 14,
+      "confidence": 0.286,
+      "lift": 3.57,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/conftest.py",
+      "commits_together": 13,
+      "confidence": 0.245,
+      "lift": 2.78,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/__init__.py",
+      "b": "httpx/_transports/asgi.py",
+      "commits_together": 13,
+      "confidence": 0.265,
+      "lift": 2.1,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_cookies.py",
+      "b": "tests/client/test_headers.py",
+      "commits_together": 12,
+      "confidence": 0.48,
+      "lift": 17.98,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/models/test_requests.py",
+      "b": "tests/test_content.py",
+      "commits_together": 12,
+      "confidence": 0.375,
+      "lift": 9.37,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_redirects.py",
+      "b": "tests/models/test_responses.py",
+      "commits_together": 12,
+      "confidence": 0.174,
+      "lift": 2.17,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_queryparams.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 11,
+      "confidence": 0.786,
+      "lift": 9.81,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_cookies.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 11,
+      "confidence": 0.44,
+      "lift": 8.75,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_redirects.py",
+      "b": "tests/test_content.py",
+      "commits_together": 11,
+      "confidence": 0.344,
+      "lift": 4.29,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/__init__.py",
+      "b": "httpx/_transports/wsgi.py",
+      "commits_together": 11,
+      "confidence": 0.344,
+      "lift": 2.72,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_cookies.py",
+      "b": "tests/client/test_queryparams.py",
+      "commits_together": 10,
+      "confidence": 0.714,
+      "lift": 27.83,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_headers.py",
+      "b": "tests/client/test_queryparams.py",
+      "commits_together": 10,
+      "confidence": 0.714,
+      "lift": 26.76,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/client/test_queryparams.py",
+      "commits_together": 10,
+      "confidence": 0.714,
+      "lift": 11.6,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_headers.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 10,
+      "confidence": 0.385,
+      "lift": 7.65,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/client/test_headers.py",
+      "commits_together": 10,
+      "confidence": 0.385,
+      "lift": 6.24,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_redirects.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 10,
+      "confidence": 0.303,
+      "lift": 3.78,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 10,
+      "confidence": 0.303,
+      "lift": 3.43,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/models/test_responses.py",
+      "commits_together": 10,
+      "confidence": 0.185,
+      "lift": 2.61,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_redirects.py",
+      "b": "tests/conftest.py",
+      "commits_together": 10,
+      "confidence": 0.189,
+      "lift": 2.36,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 9,
+      "confidence": 0.273,
+      "lift": 4.92,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_proxies.py",
+      "b": "tests/test_utils.py",
+      "commits_together": 9,
+      "confidence": 0.205,
+      "lift": 4.43,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/models/test_responses.py",
+      "b": "tests/test_content.py",
+      "commits_together": 9,
+      "confidence": 0.281,
+      "lift": 3.97,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/client/test_auth.py",
+      "commits_together": 9,
+      "confidence": 0.167,
+      "lift": 2.71,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/test_decoders.py",
+      "commits_together": 9,
+      "confidence": 0.22,
+      "lift": 2.49,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_queryparams.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 8,
+      "confidence": 0.571,
+      "lift": 11.36,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/test_api.py",
+      "commits_together": 8,
+      "confidence": 0.5,
+      "lift": 5.66,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_config.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 8,
+      "confidence": 0.242,
+      "lift": 5.13,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 8,
+      "confidence": 0.242,
+      "lift": 4.46,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_proxies.py",
+      "b": "tests/test_config.py",
+      "commits_together": 8,
+      "confidence": 0.182,
+      "lift": 3.85,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_redirects.py",
+      "b": "tests/test_asgi.py",
+      "commits_together": 8,
+      "confidence": 0.308,
+      "lift": 3.84,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_proxies.py",
+      "b": "tests/conftest.py",
+      "commits_together": 8,
+      "confidence": 0.182,
+      "lift": 3.34,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_proxies.py",
+      "b": "tests/models/test_url.py",
+      "commits_together": 8,
+      "confidence": 0.182,
+      "lift": 3.34,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/models/test_requests.py",
+      "commits_together": 8,
+      "confidence": 0.205,
+      "lift": 3.33,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 8,
+      "confidence": 0.182,
+      "lift": 2.95,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/test_utils.py",
+      "commits_together": 8,
+      "confidence": 0.178,
+      "lift": 2.89,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_redirects.py",
+      "b": "tests/test_decoders.py",
+      "commits_together": 8,
+      "confidence": 0.195,
+      "lift": 2.44,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/models/test_requests.py",
+      "commits_together": 8,
+      "confidence": 0.205,
+      "lift": 2.32,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_proxies.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 8,
+      "confidence": 0.182,
+      "lift": 2.27,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 8,
+      "confidence": 0.182,
+      "lift": 2.06,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_asgi.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 7,
+      "confidence": 0.389,
+      "lift": 14.57,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_content.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 7,
+      "confidence": 0.219,
+      "lift": 4.35,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/test_content.py",
+      "commits_together": 7,
+      "confidence": 0.219,
+      "lift": 3.55,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 7,
+      "confidence": 0.159,
+      "lift": 2.87,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_utils.py",
+      "commits_together": 7,
+      "confidence": 0.156,
+      "lift": 2.86,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/test_config.py",
+      "commits_together": 7,
+      "confidence": 0.152,
+      "lift": 2.47,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/conftest.py",
+      "commits_together": 7,
+      "confidence": 0.132,
+      "lift": 2.14,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_proxies.py",
+      "b": "tests/client/test_queryparams.py",
+      "commits_together": 6,
+      "confidence": 0.429,
+      "lift": 9.49,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/test_api.py",
+      "commits_together": 6,
+      "confidence": 0.375,
+      "lift": 6.76,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/test_asgi.py",
+      "commits_together": 6,
+      "confidence": 0.231,
+      "lift": 3.75,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_content.py",
+      "commits_together": 6,
+      "confidence": 0.188,
+      "lift": 3.45,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/models/test_requests.py",
+      "commits_together": 6,
+      "confidence": 0.154,
+      "lift": 2.77,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_proxies.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 6,
+      "confidence": 0.136,
+      "lift": 2.71,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_config.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 6,
+      "confidence": 0.13,
+      "lift": 2.59,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_config.py",
+      "commits_together": 6,
+      "confidence": 0.13,
+      "lift": 2.4,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_properties.py",
+      "b": "tests/client/test_queryparams.py",
+      "commits_together": 5,
+      "confidence": 0.455,
+      "lift": 31.62,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/models/test_requests.py",
+      "b": "tests/test_api.py",
+      "commits_together": 5,
+      "confidence": 0.312,
+      "lift": 7.8,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/test_exceptions.py",
+      "commits_together": 5,
+      "confidence": 0.417,
+      "lift": 7.52,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/client/test_properties.py",
+      "commits_together": 5,
+      "confidence": 0.455,
+      "lift": 7.38,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_proxies.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 5,
+      "confidence": 0.278,
+      "lift": 6.15,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_cookies.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 5,
+      "confidence": 0.2,
+      "lift": 5.9,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_redirects.py",
+      "b": "tests/concurrency.py",
+      "commits_together": 5,
+      "confidence": 0.455,
+      "lift": 5.68,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_properties.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 5,
+      "confidence": 0.455,
+      "lift": 5.68,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/client/test_properties.py",
+      "commits_together": 5,
+      "confidence": 0.455,
+      "lift": 5.15,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_cookies.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 5,
+      "confidence": 0.2,
+      "lift": 4.43,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/__init__.py",
+      "b": "httpx/_transports/base.py",
+      "commits_together": 5,
+      "confidence": 0.556,
+      "lift": 4.4,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_headers.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 5,
+      "confidence": 0.192,
+      "lift": 4.26,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_proxies.py",
+      "b": "tests/test_asgi.py",
+      "commits_together": 5,
+      "confidence": 0.192,
+      "lift": 4.26,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/client/test_queryparams.py",
+      "commits_together": 5,
+      "confidence": 0.357,
+      "lift": 4.04,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_redirects.py",
+      "b": "tests/test_api.py",
+      "commits_together": 5,
+      "confidence": 0.312,
+      "lift": 3.9,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_asgi.py",
+      "commits_together": 5,
+      "confidence": 0.192,
+      "lift": 3.53,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/test_asgi.py",
+      "commits_together": 5,
+      "confidence": 0.192,
+      "lift": 3.47,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_proxies.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 5,
+      "confidence": 0.152,
+      "lift": 3.35,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/__init__.py",
+      "b": "httpx/_transports/mock.py",
+      "commits_together": 5,
+      "confidence": 0.417,
+      "lift": 3.3,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/models/test_requests.py",
+      "b": "tests/test_decoders.py",
+      "commits_together": 5,
+      "confidence": 0.128,
+      "lift": 3.05,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/test_content.py",
+      "commits_together": 5,
+      "confidence": 0.156,
+      "lift": 2.82,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 5,
+      "confidence": 0.152,
+      "lift": 2.46,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/test_decoders.py",
+      "commits_together": 5,
+      "confidence": 0.122,
+      "lift": 2.2,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/client/test_headers.py",
+      "commits_together": 5,
+      "confidence": 0.192,
+      "lift": 2.18,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_cookies.py",
+      "b": "tests/client/test_properties.py",
+      "commits_together": 4,
+      "confidence": 0.364,
+      "lift": 14.17,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/concurrency.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 4,
+      "confidence": 0.364,
+      "lift": 10.73,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_event_hooks.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 4,
+      "confidence": 0.571,
+      "lift": 7.14,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/models/test_requests.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 4,
+      "confidence": 0.222,
+      "lift": 5.55,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/client/test_queryparams.py",
+      "commits_together": 4,
+      "confidence": 0.286,
+      "lift": 5.15,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_api.py",
+      "commits_together": 4,
+      "confidence": 0.25,
+      "lift": 4.59,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_asgi.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 4,
+      "confidence": 0.154,
+      "lift": 4.54,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/models/test_headers.py",
+      "commits_together": 4,
+      "confidence": 0.364,
+      "lift": 4.12,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 4,
+      "confidence": 0.222,
+      "lift": 4.08,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 4,
+      "confidence": 0.222,
+      "lift": 4.01,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/test_exceptions.py",
+      "commits_together": 4,
+      "confidence": 0.333,
+      "lift": 3.78,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_asgi.py",
+      "b": "tests/test_decoders.py",
+      "commits_together": 4,
+      "confidence": 0.154,
+      "lift": 3.65,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_cookies.py",
+      "b": "tests/test_config.py",
+      "commits_together": 4,
+      "confidence": 0.16,
+      "lift": 3.39,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_asgi.py",
+      "b": "tests/test_utils.py",
+      "commits_together": 4,
+      "confidence": 0.154,
+      "lift": 3.33,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_client.py",
+      "b": "httpx/_transports/__init__.py",
+      "commits_together": 4,
+      "confidence": 0.8,
+      "lift": 3.18,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_models.py",
+      "b": "httpx/_transports/__init__.py",
+      "commits_together": 4,
+      "confidence": 0.8,
+      "lift": 3.13,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_content.py",
+      "b": "tests/test_decoders.py",
+      "commits_together": 4,
+      "confidence": 0.125,
+      "lift": 2.97,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/client/test_cookies.py",
+      "commits_together": 4,
+      "confidence": 0.16,
+      "lift": 2.89,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_redirects.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 4,
+      "confidence": 0.222,
+      "lift": 2.77,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/client/test_headers.py",
+      "commits_together": 4,
+      "confidence": 0.154,
+      "lift": 2.77,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 4,
+      "confidence": 0.222,
+      "lift": 2.52,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/models/test_headers.py",
+      "b": "tests/models/test_queryparams.py",
+      "commits_together": 3,
+      "confidence": 0.273,
+      "lift": 16.6,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_exceptions.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 13.53,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_headers.py",
+      "b": "tests/client/test_properties.py",
+      "commits_together": 3,
+      "confidence": 0.273,
+      "lift": 10.22,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_api.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 3,
+      "confidence": 0.188,
+      "lift": 10.15,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/test_auth.py",
+      "commits_together": 3,
+      "confidence": 0.6,
+      "lift": 9.74,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/conftest.py",
+      "b": "tests/test_main.py",
+      "commits_together": 3,
+      "confidence": 0.429,
+      "lift": 7.88,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/client/test_event_hooks.py",
+      "commits_together": 3,
+      "confidence": 0.429,
+      "lift": 6.96,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/test_status_codes.py",
+      "commits_together": 3,
+      "confidence": 0.6,
+      "lift": 6.8,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_queryparams.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 3,
+      "confidence": 0.214,
+      "lift": 6.32,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_config.py",
+      "b": "httpx/_transports/__init__.py",
+      "commits_together": 3,
+      "confidence": 0.6,
+      "lift": 6.15,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_properties.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 3,
+      "confidence": 0.273,
+      "lift": 6.04,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_api.py",
+      "b": "tests/test_content.py",
+      "commits_together": 3,
+      "confidence": 0.188,
+      "lift": 5.71,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_api.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 3,
+      "confidence": 0.188,
+      "lift": 5.53,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_content.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 5.07,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/concurrency.py",
+      "commits_together": 3,
+      "confidence": 0.273,
+      "lift": 4.92,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_async_client.py",
+      "b": "tests/client/test_properties.py",
+      "commits_together": 3,
+      "confidence": 0.273,
+      "lift": 4.92,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_client.py",
+      "b": "tests/client/test_event_hooks.py",
+      "commits_together": 3,
+      "confidence": 0.429,
+      "lift": 4.85,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_queryparams.py",
+      "b": "tests/test_config.py",
+      "commits_together": 3,
+      "confidence": 0.214,
+      "lift": 4.54,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_api.py",
+      "b": "tests/test_decoders.py",
+      "commits_together": 3,
+      "confidence": 0.188,
+      "lift": 4.45,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/concurrency.py",
+      "commits_together": 3,
+      "confidence": 0.273,
+      "lift": 4.43,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_decoders.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 3.96,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/models/test_headers.py",
+      "b": "tests/models/test_responses.py",
+      "commits_together": 3,
+      "confidence": 0.273,
+      "lift": 3.85,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/models/test_responses.py",
+      "b": "tests/test_exceptions.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 3.53,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_headers.py",
+      "b": "tests/test_content.py",
+      "commits_together": 3,
+      "confidence": 0.115,
+      "lift": 3.51,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_headers.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 3,
+      "confidence": 0.115,
+      "lift": 3.41,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_multipart.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 3.31,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/test_api.py",
+      "commits_together": 3,
+      "confidence": 0.188,
+      "lift": 3.04,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_headers.py",
+      "b": "tests/models/test_requests.py",
+      "commits_together": 3,
+      "confidence": 0.115,
+      "lift": 2.88,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_auth.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 2.71,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/models/test_responses.py",
+      "b": "tests/test_api.py",
+      "commits_together": 3,
+      "confidence": 0.188,
+      "lift": 2.65,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_headers.py",
+      "b": "tests/test_config.py",
+      "commits_together": 3,
+      "confidence": 0.115,
+      "lift": 2.44,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/test_asgi.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 3,
+      "confidence": 0.115,
+      "lift": 2.29,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_headers.py",
+      "b": "tests/models/test_url.py",
+      "commits_together": 3,
+      "confidence": 0.115,
+      "lift": 2.12,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/models/test_url.py",
+      "b": "tests/test_asgi.py",
+      "commits_together": 3,
+      "confidence": 0.115,
+      "lift": 2.12,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "tests/client/test_proxies.py",
+      "b": "tests/test_content.py",
+      "commits_together": 3,
+      "confidence": 0.094,
+      "lift": 2.08,
+      "connected_only_via_package_root": true
+    }
+  ],
+  "test_and_subject": [
+    {
+      "a": "httpx/_models.py",
+      "b": "tests/models/test_responses.py",
+      "commits_together": 52,
+      "confidence": 0.754,
+      "lift": 2.95,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_client.py",
+      "b": "tests/client/test_client.py",
+      "commits_together": 47,
+      "confidence": 0.547,
+      "lift": 2.17,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_models.py",
+      "b": "tests/client/test_client.py",
+      "commits_together": 47,
+      "confidence": 0.547,
+      "lift": 2.14,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_client.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 41,
+      "confidence": 0.526,
+      "lift": 2.09,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_config.py",
+      "b": "tests/test_config.py",
+      "commits_together": 38,
+      "confidence": 0.826,
+      "lift": 8.47,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_models.py",
+      "b": "tests/models/test_url.py",
+      "commits_together": 33,
+      "confidence": 0.623,
+      "lift": 2.44,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_client.py",
+      "b": "tests/client/test_async_client.py",
+      "commits_together": 32,
+      "confidence": 0.593,
+      "lift": 2.36,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_client.py",
+      "b": "tests/client/test_auth.py",
+      "commits_together": 31,
+      "confidence": 0.517,
+      "lift": 2.05,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_models.py",
+      "b": "tests/models/test_requests.py",
+      "commits_together": 28,
+      "confidence": 0.718,
+      "lift": 2.81,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_client.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 28,
+      "confidence": 0.636,
+      "lift": 2.53,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_decoders.py",
+      "b": "tests/test_decoders.py",
+      "commits_together": 22,
+      "confidence": 0.537,
+      "lift": 11.88,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_models.py",
+      "b": "tests/test_decoders.py",
+      "commits_together": 22,
+      "confidence": 0.537,
+      "lift": 2.1,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_auth.py",
+      "b": "tests/client/test_auth.py",
+      "commits_together": 15,
+      "confidence": 0.484,
+      "lift": 7.85,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_exceptions.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 14,
+      "confidence": 0.241,
+      "lift": 3.01,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_decoders.py",
+      "b": "tests/models/test_responses.py",
+      "commits_together": 13,
+      "confidence": 0.295,
+      "lift": 4.17,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_utils.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 13,
+      "confidence": 0.295,
+      "lift": 3.2,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_content.py",
+      "b": "tests/test_content.py",
+      "commits_together": 12,
+      "confidence": 0.48,
+      "lift": 14.61,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_multipart.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 12,
+      "confidence": 0.5,
+      "lift": 9.94,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/asgi.py",
+      "b": "tests/test_asgi.py",
+      "commits_together": 12,
+      "confidence": 0.462,
+      "lift": 9.17,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_models.py",
+      "b": "tests/models/test_queryparams.py",
+      "commits_together": 12,
+      "confidence": 0.75,
+      "lift": 2.93,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_exceptions.py",
+      "b": "tests/client/test_client.py",
+      "commits_together": 11,
+      "confidence": 0.19,
+      "lift": 2.15,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_urlparse.py",
+      "b": "tests/models/test_url.py",
+      "commits_together": 10,
+      "confidence": 0.526,
+      "lift": 9.67,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/asgi.py",
+      "b": "tests/client/test_auth.py",
+      "commits_together": 10,
+      "confidence": 0.204,
+      "lift": 3.31,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/asgi.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 10,
+      "confidence": 0.204,
+      "lift": 2.55,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_types.py",
+      "b": "tests/test_content.py",
+      "commits_together": 9,
+      "confidence": 0.281,
+      "lift": 6.37,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_models.py",
+      "b": "tests/models/test_headers.py",
+      "commits_together": 9,
+      "confidence": 0.818,
+      "lift": 3.2,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/wsgi.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 8,
+      "confidence": 0.444,
+      "lift": 13.53,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_urls.py",
+      "b": "tests/models/test_url.py",
+      "commits_together": 8,
+      "confidence": 0.4,
+      "lift": 7.35,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/wsgi.py",
+      "b": "tests/client/test_auth.py",
+      "commits_together": 8,
+      "confidence": 0.25,
+      "lift": 4.06,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/asgi.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 8,
+      "confidence": 0.163,
+      "lift": 3.25,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/wsgi.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 8,
+      "confidence": 0.25,
+      "lift": 3.12,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_api.py",
+      "b": "tests/client/test_auth.py",
+      "commits_together": 8,
+      "confidence": 0.16,
+      "lift": 2.6,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_config.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 8,
+      "confidence": 0.242,
+      "lift": 2.49,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_utils.py",
+      "b": "tests/models/test_requests.py",
+      "commits_together": 8,
+      "confidence": 0.205,
+      "lift": 2.22,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/default.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 7,
+      "confidence": 0.212,
+      "lift": 4.7,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/default.py",
+      "b": "tests/test_config.py",
+      "commits_together": 7,
+      "confidence": 0.212,
+      "lift": 4.49,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_exceptions.py",
+      "b": "tests/test_decoders.py",
+      "commits_together": 7,
+      "confidence": 0.171,
+      "lift": 2.87,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_exceptions.py",
+      "b": "tests/test_config.py",
+      "commits_together": 7,
+      "confidence": 0.152,
+      "lift": 2.56,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_client.py",
+      "b": "tests/client/test_properties.py",
+      "commits_together": 7,
+      "confidence": 0.636,
+      "lift": 2.53,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/wsgi.py",
+      "b": "tests/client/test_client.py",
+      "commits_together": 7,
+      "confidence": 0.219,
+      "lift": 2.48,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_exceptions.py",
+      "b": "tests/client/test_async_client.py",
+      "commits_together": 7,
+      "confidence": 0.13,
+      "lift": 2.18,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_api.py",
+      "b": "tests/test_api.py",
+      "commits_together": 6,
+      "confidence": 0.375,
+      "lift": 7.31,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/asgi.py",
+      "b": "tests/client/test_cookies.py",
+      "commits_together": 6,
+      "confidence": 0.24,
+      "lift": 4.77,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/asgi.py",
+      "b": "tests/client/test_headers.py",
+      "commits_together": 6,
+      "confidence": 0.231,
+      "lift": 4.59,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_content.py",
+      "b": "tests/client/test_auth.py",
+      "commits_together": 6,
+      "confidence": 0.24,
+      "lift": 3.9,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_models.py",
+      "b": "tests/models/test_cookies.py",
+      "commits_together": 6,
+      "confidence": 0.857,
+      "lift": 3.35,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_types.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 6,
+      "confidence": 0.14,
+      "lift": 3.09,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_types.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 6,
+      "confidence": 0.14,
+      "lift": 2.77,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/asgi.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 6,
+      "confidence": 0.136,
+      "lift": 2.71,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_api.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 6,
+      "confidence": 0.136,
+      "lift": 2.66,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_api.py",
+      "b": "tests/test_utils.py",
+      "commits_together": 6,
+      "confidence": 0.133,
+      "lift": 2.6,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_exceptions.py",
+      "b": "tests/models/test_requests.py",
+      "commits_together": 6,
+      "confidence": 0.154,
+      "lift": 2.58,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/asgi.py",
+      "b": "tests/client/test_async_client.py",
+      "commits_together": 6,
+      "confidence": 0.122,
+      "lift": 2.21,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_exceptions.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 6,
+      "confidence": 0.122,
+      "lift": 2.06,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_utils.py",
+      "b": "tests/test_content.py",
+      "commits_together": 6,
+      "confidence": 0.188,
+      "lift": 2.03,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/default.py",
+      "b": "tests/test_exceptions.py",
+      "commits_together": 5,
+      "confidence": 0.417,
+      "lift": 12.3,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/mock.py",
+      "b": "tests/client/test_async_client.py",
+      "commits_together": 5,
+      "confidence": 0.417,
+      "lift": 7.52,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_multipart.py",
+      "b": "tests/test_content.py",
+      "commits_together": 5,
+      "confidence": 0.208,
+      "lift": 6.34,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_main.py",
+      "b": "tests/test_config.py",
+      "commits_together": 5,
+      "confidence": 0.278,
+      "lift": 5.88,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/wsgi.py",
+      "b": "tests/client/test_headers.py",
+      "commits_together": 5,
+      "confidence": 0.192,
+      "lift": 5.85,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_main.py",
+      "b": "tests/conftest.py",
+      "commits_together": 5,
+      "confidence": 0.278,
+      "lift": 5.1,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_content.py",
+      "b": "tests/models/test_requests.py",
+      "commits_together": 5,
+      "confidence": 0.2,
+      "lift": 4.99,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_api.py",
+      "b": "tests/client/test_cookies.py",
+      "commits_together": 5,
+      "confidence": 0.2,
+      "lift": 3.9,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_utils.py",
+      "b": "tests/models/test_queryparams.py",
+      "commits_together": 5,
+      "confidence": 0.312,
+      "lift": 3.38,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/wsgi.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 5,
+      "confidence": 0.156,
+      "lift": 3.11,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_content.py",
+      "b": "tests/models/test_responses.py",
+      "commits_together": 5,
+      "confidence": 0.2,
+      "lift": 2.82,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/wsgi.py",
+      "b": "tests/client/test_async_client.py",
+      "commits_together": 5,
+      "confidence": 0.156,
+      "lift": 2.82,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/default.py",
+      "b": "tests/client/test_async_client.py",
+      "commits_together": 5,
+      "confidence": 0.152,
+      "lift": 2.73,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/default.py",
+      "b": "tests/client/test_auth.py",
+      "commits_together": 5,
+      "confidence": 0.152,
+      "lift": 2.46,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_decoders.py",
+      "b": "tests/conftest.py",
+      "commits_together": 5,
+      "confidence": 0.114,
+      "lift": 2.09,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_config.py",
+      "b": "tests/client/test_cookies.py",
+      "commits_together": 5,
+      "confidence": 0.2,
+      "lift": 2.05,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_auth.py",
+      "b": "tests/test_auth.py",
+      "commits_together": 4,
+      "confidence": 0.8,
+      "lift": 25.14,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/asgi.py",
+      "b": "tests/client/test_queryparams.py",
+      "commits_together": 4,
+      "confidence": 0.286,
+      "lift": 5.68,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_exceptions.py",
+      "b": "tests/test_exceptions.py",
+      "commits_together": 4,
+      "confidence": 0.333,
+      "lift": 5.6,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/mock.py",
+      "b": "tests/client/test_auth.py",
+      "commits_together": 4,
+      "confidence": 0.333,
+      "lift": 5.41,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/wsgi.py",
+      "b": "tests/client/test_cookies.py",
+      "commits_together": 4,
+      "confidence": 0.16,
+      "lift": 4.87,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/asgi.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 4,
+      "confidence": 0.222,
+      "lift": 4.42,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_api.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 4,
+      "confidence": 0.222,
+      "lift": 4.33,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/mock.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 4,
+      "confidence": 0.333,
+      "lift": 4.16,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_decoders.py",
+      "b": "tests/test_asgi.py",
+      "commits_together": 4,
+      "confidence": 0.154,
+      "lift": 3.41,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_auth.py",
+      "b": "tests/models/test_requests.py",
+      "commits_together": 4,
+      "confidence": 0.129,
+      "lift": 3.22,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_content.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 4,
+      "confidence": 0.16,
+      "lift": 3.18,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_status_codes.py",
+      "b": "tests/client/test_client.py",
+      "commits_together": 4,
+      "confidence": 0.222,
+      "lift": 2.52,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/asgi.py",
+      "b": "tests/test_timeouts.py",
+      "commits_together": 4,
+      "confidence": 0.121,
+      "lift": 2.41,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_config.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 4,
+      "confidence": 0.222,
+      "lift": 2.28,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_client.py",
+      "b": "tests/client/test_event_hooks.py",
+      "commits_together": 4,
+      "confidence": 0.571,
+      "lift": 2.27,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_status_codes.py",
+      "b": "tests/test_status_codes.py",
+      "commits_together": 3,
+      "confidence": 0.6,
+      "lift": 32.47,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/base.py",
+      "b": "tests/test_exceptions.py",
+      "commits_together": 3,
+      "confidence": 0.333,
+      "lift": 27.06,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_main.py",
+      "b": "tests/test_main.py",
+      "commits_together": 3,
+      "confidence": 0.429,
+      "lift": 23.19,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_main.py",
+      "b": "tests/test_exceptions.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 13.53,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_urls.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 8.12,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/wsgi.py",
+      "b": "tests/test_exceptions.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 7.61,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_exceptions.py",
+      "b": "tests/models/test_cookies.py",
+      "commits_together": 3,
+      "confidence": 0.429,
+      "lift": 7.2,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/base.py",
+      "b": "tests/client/test_async_client.py",
+      "commits_together": 3,
+      "confidence": 0.333,
+      "lift": 6.01,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_decoders.py",
+      "b": "tests/test_exceptions.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 5.53,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/asgi.py",
+      "b": "tests/test_exceptions.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 4.97,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/base.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 3,
+      "confidence": 0.333,
+      "lift": 4.16,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/base.py",
+      "b": "tests/client/test_client.py",
+      "commits_together": 3,
+      "confidence": 0.333,
+      "lift": 3.78,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_decoders.py",
+      "b": "tests/test_wsgi.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 3.69,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_main.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 3.69,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/wsgi.py",
+      "b": "tests/test_asgi.py",
+      "commits_together": 3,
+      "confidence": 0.115,
+      "lift": 3.51,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/default.py",
+      "b": "tests/test_asgi.py",
+      "commits_together": 3,
+      "confidence": 0.115,
+      "lift": 3.41,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_status_codes.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 3.31,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_urls.py",
+      "b": "tests/test_config.py",
+      "commits_together": 3,
+      "confidence": 0.15,
+      "lift": 3.18,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_urlparse.py",
+      "b": "tests/test_multipart.py",
+      "commits_together": 3,
+      "confidence": 0.158,
+      "lift": 3.14,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_utils.py",
+      "b": "tests/models/test_headers.py",
+      "commits_together": 3,
+      "confidence": 0.273,
+      "lift": 2.95,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/mock.py",
+      "b": "tests/client/test_client.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 2.83,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_utils.py",
+      "b": "tests/test_exceptions.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 2.71,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_main.py",
+      "b": "tests/client/test_auth.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 2.71,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_types.py",
+      "b": "tests/test_asgi.py",
+      "commits_together": 3,
+      "confidence": 0.115,
+      "lift": 2.61,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_config.py",
+      "b": "tests/test_exceptions.py",
+      "commits_together": 3,
+      "confidence": 0.25,
+      "lift": 2.56,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_content.py",
+      "b": "tests/test_config.py",
+      "commits_together": 3,
+      "confidence": 0.12,
+      "lift": 2.54,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_status_codes.py",
+      "b": "tests/models/test_responses.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 2.35,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_auth.py",
+      "b": "tests/test_decoders.py",
+      "commits_together": 3,
+      "confidence": 0.097,
+      "lift": 2.3,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_api.py",
+      "b": "tests/test_asgi.py",
+      "commits_together": 3,
+      "confidence": 0.115,
+      "lift": 2.25,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_content.py",
+      "b": "tests/client/test_async_client.py",
+      "commits_together": 3,
+      "confidence": 0.12,
+      "lift": 2.16,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_status_codes.py",
+      "b": "tests/client/test_redirects.py",
+      "commits_together": 3,
+      "confidence": 0.167,
+      "lift": 2.08,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_transports/wsgi.py",
+      "b": "tests/client/test_proxies.py",
+      "commits_together": 3,
+      "confidence": 0.094,
+      "lift": 2.08,
+      "connected_only_via_package_root": true
+    },
+    {
+      "a": "httpx/_exceptions.py",
+      "b": "tests/client/test_cookies.py",
+      "commits_together": 3,
+      "confidence": 0.12,
+      "lift": 2.02,
+      "connected_only_via_package_root": true
+    }
+  ],
+  "imported_never_co_changed": [
+    {
+      "importer": "httpx/__init__.py",
+      "imported": "tests/client/test_event_hooks.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "httpx/__init__.py",
+      "imported": "tests/models/test_cookies.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "httpx/__init__.py",
+      "imported": "tests/models/test_headers.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "httpx/__init__.py",
+      "imported": "tests/models/test_queryparams.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "httpx/__init__.py",
+      "imported": "tests/test_auth.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "httpx/__init__.py",
+      "imported": "tests/test_main.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "httpx/__init__.py",
+      "imported": "tests/test_status_codes.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "httpx/_main.py",
+      "imported": "httpx/_status_codes.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "httpx/_transports/__init__.py",
+      "imported": "httpx/_transports/base.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "httpx/_transports/__init__.py",
+      "imported": "httpx/_transports/default.py",
+      "shared_commits": 0
+    },
+    {
+      "importer": "httpx/_transports/__init__.py",
+      "imported": "httpx/_transports/mock.py",
+      "shared_commits": 0
+    }
+  ]
+}
