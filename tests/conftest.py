@@ -16,6 +16,7 @@ import pytest
 
 class Repo:
     def __init__(self, root: Path):
+        root.mkdir(parents=True, exist_ok=True)
         self.root = root
         self._git("init", "-q", "-b", "main")
         self._git("config", "user.email", "t@example.invalid")
@@ -62,3 +63,9 @@ class Repo:
 @pytest.fixture
 def repo(tmp_path: Path) -> Repo:
     return Repo(tmp_path)
+
+
+@pytest.fixture
+def empty_repo(tmp_path: Path) -> Repo:
+    """Initialised, never committed to. `git log` exits non-zero on one of these."""
+    return Repo(tmp_path / "empty")

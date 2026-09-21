@@ -94,8 +94,7 @@ def test_a_directory_that_is_not_a_repo(tmp_path):
     assert not history.is_repo(tmp_path)
 
 
-def test_a_repo_with_no_commits_reads_as_empty(tmp_path):
-    from tests.conftest import Repo
-
-    r = Repo(tmp_path)
-    assert history.read(r.root).commits == []
+def test_a_repo_with_no_commits_reads_as_empty(empty_repo):
+    """`git log` exits non-zero on a fresh repository. Raising would be wrong: there is no
+    history, which is a perfectly good answer."""
+    assert history.read(empty_repo.root).commits == []
