@@ -103,11 +103,15 @@ def test_an_unparseable_file_is_recorded_not_raised(tmp_path):
 
 
 def test_virtualenvs_and_caches_are_skipped(tmp_path):
-    g = build(
-        tmp_path,
-        a="X=1\n",
-        **{".venv__lib__thing": "X=1\n", "__pycache____junk": "X=1\n"},
-    )
+    # Written directly rather than through `build`'s `__` -> `/` convention: a name that
+    # *starts* with `__`, like `__pycache__`, translates to a leading slash, and the test
+    # then tries to create `/pycache`. On Windows that lands somewhere harmless and the
+    # test passes; on Linux it is a permission error at the filesystem root.
+    for rel in (".venv/lib/thing.py", "__pycache__/junk.py", "node_modules/x.py"):
+        p = tmp_path / rel
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text("X = 1\n", encoding="utf-8")
+    g = build(tmp_path, a="X=1\n")
     assert g.files == ["a.py"]
 
 
