@@ -78,6 +78,18 @@ def text(
             f"  {c.gone} further pairs involve a file that no longer exists and are not "
             f"counted either way."
         )
+    if c.weak_lift:
+        # These are counted in total_coupled and never reach `hidden`, so without
+        # this line they vanish: the four bucket counts below would not add up to
+        # the unexplained remainder and nothing would say why. A pair is dropped
+        # here when both files change so often that changing together carries no
+        # information - lift near 1 means "these two move together about as often
+        # as any two busy files would".
+        out.append(
+            f"  {c.weak_lift} further pairs change together but with lift below "
+            f"{c.min_lift:g}, i.e. no more often than their own churn predicts, "
+            f"and are not listed below."
+        )
     out.append("")
 
     no_path = c.no_path(include_tests=False)
@@ -141,6 +153,10 @@ def as_json(hist: History, g: ImportGraph, cp: Coupling, c: Comparison) -> dict:
         "unparseable_files": len(g.unparseable),
         "coupled_pairs": c.total_coupled,
         "pairs_with_a_deleted_file": c.gone,
+        # Counted in coupled_pairs but never listed, so a consumer that does
+        # `coupled_pairs - explained_by_imports` and expects the lists to match
+        # needs this to reconcile.
+        "pairs_below_min_lift": c.weak_lift,
         "explained_by_imports": c.agreed,
         "explained_share": round(c.agreed / c.total_coupled, 4) if c.total_coupled else 0.0,
         "min_support": cp.min_support,

@@ -88,6 +88,48 @@ def test_a_low_lift_pair_is_dropped_and_counted():
     assert c.weak_lift > 0
 
 
+def test_a_dropped_low_lift_pair_is_still_counted_in_the_total():
+    """The arithmetic a reader does has to work out.
+
+    A weak-lift pair is counted in `total_coupled` and never reaches `hidden`,
+    so `total_coupled - agreed` is larger than the buckets the report prints.
+    If `weak_lift` were not carried alongside, those pairs would simply vanish:
+    the headline would say N coupled pairs, the lists would show fewer, and
+    nothing would explain the difference.
+    """
+    commits = [["a.py", "b.py"]] * 3 + [["c.py", "b.py"]] * 3 + [["d.py", "b.py"]] * 3
+    g = graph(["a.py", "b.py", "c.py", "d.py"])
+    c = compare.run(g, couple.build(hist(*commits), min_support=3), min_lift=2.0)
+
+    listed = len(c.no_path()) + len(c.hub_only()) + len(c.test_pairs())
+    assert listed == 0
+    assert c.total_coupled - c.agreed == c.weak_lift + listed
+
+
+def test_the_report_says_where_the_dropped_pairs_went():
+    """Silently dropping them is the bug this guards.
+
+    `gone` was already reported; `weak_lift` was incremented and then never
+    read by anything - not the text report, not the JSON - so a run could show
+    "Of 1 coupled file pairs, the import graph explains 0" above four bucket
+    counts of zero, with no account of the missing pair.
+    """
+    from cartographer import report
+
+    commits = [["a.py", "b.py"]] * 3 + [["c.py", "b.py"]] * 3 + [["d.py", "b.py"]] * 3
+    g = graph(["a.py", "b.py", "c.py", "d.py"])
+    history = hist(*commits)
+    cp = couple.build(history, min_support=3)
+    c = compare.run(g, cp, min_lift=2.0)
+    assert c.weak_lift > 0
+
+    text = report.text(history, g, cp, c)
+    assert "lift below" in text, "the dropped pairs are not accounted for in the report"
+    assert str(c.weak_lift) in text
+
+    assert report.as_json(history, g, cp, c)["pairs_below_min_lift"] == c.weak_lift
+
+
 def test_a_test_and_its_subject_is_marked_not_counted_as_a_discovery():
     g = graph(["pkg/a.py", "tests/test_a.py"])
     cp = couple.build(hist(*[["pkg/a.py", "tests/test_a.py"]] * 4, *FILLER), min_support=3)
