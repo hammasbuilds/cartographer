@@ -51,7 +51,10 @@ IMPORTING = ("app.py", "helpers.py")
 
 def git(args: list[str], cwd: Path) -> None:
     subprocess.run(
-        ["git", *args], cwd=cwd, check=True, capture_output=True,
+        ["git", *args],
+        cwd=cwd,
+        check=True,
+        capture_output=True,
         env={**os.environ, **ENV},
     )
 
@@ -84,15 +87,15 @@ def build(repo: Path, commits: int = 60) -> None:
             # writer.py and schema.py, together, with no import between them.
             for name in COUPLED:
                 path = repo / name
-                path.write_text(path.read_text(encoding="utf-8") + f"# field {n}\n",
-                                encoding="utf-8")
+                path.write_text(
+                    path.read_text(encoding="utf-8") + f"# field {n}\n", encoding="utf-8"
+                )
             message = f"add field {n} to the record format"
         else:
             # One of the importing pair, alone.
             name = IMPORTING[rng.randrange(2)]
             path = repo / name
-            path.write_text(path.read_text(encoding="utf-8") + f"# tweak {n}\n",
-                            encoding="utf-8")
+            path.write_text(path.read_text(encoding="utf-8") + f"# tweak {n}\n", encoding="utf-8")
             message = f"tidy {name}"
         git(["add", "-A"], repo)
         git(["commit", "-q", "-m", message], repo)
@@ -103,10 +106,13 @@ def main() -> int:
     repo = work / "sample"
     try:
         print("Building a repository whose coupling is known in advance:", flush=True)
-        print(f"  {COUPLED[0]} + {COUPLED[1]}   change together, never import each other",
-              flush=True)
-        print(f"  {IMPORTING[0]} + {IMPORTING[1]}   import each other, change independently",
-              flush=True)
+        print(
+            f"  {COUPLED[0]} + {COUPLED[1]}   change together, never import each other", flush=True
+        )
+        print(
+            f"  {IMPORTING[0]} + {IMPORTING[1]}   import each other, change independently",
+            flush=True,
+        )
         print(flush=True)
         build(repo)
         print(f"  built 61 real commits in {repo}", flush=True)
@@ -115,7 +121,9 @@ def main() -> int:
         env = {**os.environ, "PYTHONPATH": str(ROOT / "src"), "PYTHONIOENCODING": "utf-8"}
         result = subprocess.run(
             [sys.executable, "-m", "cartographer.cli", "map", str(repo), "--min-support", "3"],
-            cwd=ROOT, env=env, check=False,
+            cwd=ROOT,
+            env=env,
+            check=False,
         )
         if result.returncode != 0:
             return result.returncode
